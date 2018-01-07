@@ -1,0 +1,920 @@
+<resources>
+    <string name="app_name">C Language Tips and Tricks</string>
+    <string name="coverview">
+    <b>Introduction to C:</b>\n
+        \n‣ C Language was invented by Dennis Ritchie in between 1969 and 1973 at Bell Labs.\n
+        \n‣ It is a structured language and easy to learn.\n
+        \n‣ C language follows a standard called ANSI.\n
+        \n‣ C Language was developed to design UNIX Operating System.\n
+        \n‣ Most of the Device Driver programs are written in C.
+        \n\n<b>Character Sets in C:</b>\n
+
+        \n‣ A, B, C, D, E, F………. Z
+        \n‣ a, b, c, d, e…………… z
+        \n‣ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9\n
+        \n‣ C language supports 256 characters.  Out of them 127 are ASCII (26+26 alphabets, 10 digits, 32 special characters, 33 control characters) and 129 are Extended ASCII characters.\n
+        \n‣ ANSI C contains 32 keywords.\n
+        \n‣ C is Case Sensitive i.e. there is a distinction between Uppercase and Lowercase. int and INT are not same in C. \n
+        \n‣ printf("%5.2f",price); It means price is a floating point variable with total 5 places and 2 places after decimal.\n
+        \n‣ Token is any name using in a C Program.\n
+        \n‣ Identifiers means any name that refers to a variable , function or array. \n
+
+        \n\n\n\n
+    </string>
+    <string name="cdatatype">
+        ‣ Data will be stored in memory in ABCD or DCBA format that depends on Endianness of the system. \n
+\n	‣ In little-endian systems data is stored in DCBA order.\n
+\n	‣ In big-endian systems data is stored in DCBA order. \n
+\n	‣ Cycle is present in integer and character data type but is not present in float or double types.\n
+\n	‣ Increment the value of a float or a double variable beyond its maximum range that is +INF and beyond it minimum range –INF.\n
+\n	‣ The minimum octal character constant is ‘\000’ and maximum octal character constant is ‘\377’.\n
+\n	‣ Float data is always stored in memory in mantissa and exponent format.\n
+\n		‣ Enum data type creates a sequence set of integer constants.\n
+\n	‣ There is no cycle present in enum data type.\n
+\n	‣ BCPL is a type-less language.\n
+\n	‣ When a language is able to produce a new data type it is called extensibility.\n
+\n	‣ Typedef creates a new name but does not create a new type.\n
+\n	‣ The process of byte ordering is known as endianness.\n
+\n	‣ 32 bits recurring binary of a float is always lesser tan 64 bits recurring binary of a float.\n
+\n‣ Unsigned modifier always makes double the range of a type.\n
+\n‣ All constants in C are R value category of objects.\n
+\n‣ Constant variables, array name and function name; enum constants are Rvalue category of objects and they should always be places in the right side of an equal-to operator.\n
+\n‣ All escape sequence character are octal character constants.\n
+\n‣ The size of the null string constant is 1 byte.\n
+\n‣ ‘\0’ is null character whose ASCII value is 0.\n
+\n‣ Void type is used in three different places, such as:\n
+\n\t‣ No argument to a function
+\n\t‣ No return type
+\n\t‣ Generic pointer \n
+\n‣ The number of constants and variables in C are equal.\n
+\n‣ Size of integer type depends on compiler or wordlenght of the processor.\n
+\n‣ Float follows 23 bits mantissa, 8bits exponent and 1-bit sign, but double follows 52 bits mantissa, 11 bits exponent and 1 bit sign.\n
+\n‣ C language supports 256 characters.  Out of them 127 are ASCII (26+26 alphabets, 10 digits, 32 special characters, 33 control characters) and 129 are Extended ASCII characters.\n
+\n‣ Every variable and function allocate memory in load time and rum time, but how much memory will be allocated and where will be allocated that is decided during compile and linking time.\n
+ \n\n\n\n\n
+    </string>
+    <string name="coperators">
+        ‣ Precedence and associativity of an operator is only implemented if expression is represented in INFIX notation.\n
+\n‣ Precedence decides which operation will be performed first in an expression.\n
+\n‣ Associativity decides the order of evolution (left to right or right to left) if more than one operator enjoys same precedence.\n
+\n‣ The operator which requires three operands is called ternary operator.\n
+\n‣ ? : is an conditional ternary operator.\n
+\n‣ Associativity of a comma (,) operator is left to right.\n
+\n‣ # is a string forming operator that converts a non-string data to string and is used only in pre-processor directives.\n
+\n‣ There is no operator in C to calculate the power of a number.\n
+\n‣ Bit-wise operator in C to calculate the power of a number.\n
+\n‣ Return value of relational and logical operators is 0 or 1.\n
+\n‣ X++ and ++X both are always same.\n
+\n‣ If ++ or – operations occur more than once, than first two make a pair and are evaluated, then the result is added in next, then next, and so on.\n
+\n\n\n\n\n
+    </string>
+    <string name="ccontrol_structure">
+      ‣ Hanging if is not allowed in C.\n
+\n‣ The if statement is used for checking range and the yes/no problem.\n
+\n‣ Else is the optional part of if.\n
+\n‣ Execution of switch case starts from the match case.\n
+\n‣ Use break to prevent the falling of control from one case to another case.\n
+\n‣ If none of the cases are satisfied then default case will be satisfied.\n
+\n‣ Case character only can be integral constant.\n
+\n‣ Switch case only checks integer and not float.\n
+\n‣ Continue can’t be the part of switch case.\n
+\n‣ Switch without case is of no use (no output no error).\n
+\n‣ Duplicate case is not allowed in C.\n
+\n‣ Switch case is the replacement of if…else statement.\n
+\n‣ Switch case is used for section control statement.\n
+\n‣ Loop counter can be int, char, and float.\n
+\n‣ If loop counter is not initialized in a loop, that is called odd loop.\n
+\n‣ Loop is an alternate of function recursion and function recursion is an alternate of loop.\n
+\n‣ For loop is suitable for finite loop, whit=le loop is suitable foe unknown loop and do while loop is suitable for looping at least once.\n
+\n‣ Loop counter has its own block scoping.\n
+\n‣ Drop all the parts of for loop makes it an infinite loop but drops all parts of while and do while lop and it gives an error.\n
+\n‣ Break in loop transfers control outside the loop.\n
+\n‣ Continue transfers control outside the loop.\n
+\n‣ If loop counter exceeds its range, it will be an infinite loop.\n
+\n‣ Every loop has a start value, step value and stop value.\n
+\n‣ If loop loses its step value, it will be an infinite loop.\n
+\n‣ Loop is used for software delay and repeating some part of the C program.\n
+\n‣ Loop is faster than function recursion.\n
+\n‣ Only one statement falls under the default scope of the control structure.\n
+\n\n\n\n\n
+    </string>
+    <string name="cpointers">
+‣ When a pointer refers to 0 (zero) address, it is called null pointer.\n
+\n‣ Generic pointer cannot be Dereference.\n
+\n‣ Arithmetic is not allowed in generic pointer.\n
+\n‣ Return type of malloc and calloc function is generic pointer.\n
+\n‣ Address + 1 = next address of its type.\n
+\n‣ When a pointer refers an invalid address, then it is called wiled pointer.\n
+\n‣ When a pointer loses reference, it is called memory leak.\n
+\n‣ Size of a pointer in gcc is 4 bytes.\n
+\n‣ In TC, when a pointer works within 64KB memory, then it is called near pointer. But when the pointer works beyond 64KB memory, then it is called far pointer.\n
+\n‣ Dereferencing to a wild pointer is called core dump.\n
+\n‣ When the pointer address becomes invalid in a program then it is called dangling pointer.\n
+\n‣ Function name and array name are known as constant pointers.\n
+\n‣ When more than one pointers refer to the same location and one of them modifies the resource, at the same time others are waiting, then that pointer must be a restrict pointer.\n
+\n‣ Dynamic memory allocation is possible using pointer.\n
+\n‣ Random Access of any memory cell of a variable will use pointer.\n
+\n‣ A function can be called or invoke using a function pointer.\n
+\n‣ Dereferencing to a null pointer is known as null pointer assignment.\n
+\n\n\n\n\n
+    </string>
+    <string name="carrays">‣ An array is a variable which only holds similar types of data elements.\n
+\n‣ Array is used to prepare a list.\n
+\n‣ A list can be prepared using an array and linked list. If the list size is known in advance then you can take an array, but if it is unknown you can take a linked list.\n
+\n‣ Limitation of an array is:\n
+
+\n\n\t‣ Unused memory of an array cannot be used.\n
+\n\t‣ Array size cannot be changed in run time.\n
+\n\t‣ One array cannot be assigned to another array, because both are constant pointer.\n
+\n\t‣ The size of the Zero length array is 0.\n
+\n\n‣ Malloc memory allocation is single dimensional array equivalent and calloc memory allocation is double dimensional array equivalent.\n
+\n‣ The major difference between strcpy and strncpy is strcpy copies the whole string including null character but strncpy does not copy null character.\n
+\n‣ Double dimensional array is a collection of single dimensional arrays.  Where each single dimensional array must be used for different purpose.\n
+\n‣ Visiting double dimensional array in row major is always faster than column major.\n
+\n‣ Array name + 1 = Address of next element if it is single dimensional array.\n
+\n‣ Array name + 1 = Address of next array if it is double dimensional array.\n
+\n‣ To get the address of any element of a double array, use\n
+\nAddress = base address + (row number * column size + col number) + size of element.\n
+\n\n\n\n\n
+    </string>
+    <string name="cdynamic_memory">
+‣ Dynamic Memory allocation in C is a part of heap area.\n
+\n‣ Memory allocation in C is possible through variables and functions.\n
+\n‣ Basically, dynamic memory allocation is done by a family of 3 function in C, such as malloc(), calloc() and realloc().\n
+\n‣ malloc(), calloc() and realloc() always allocate memory above the break pointer.\n
+\n‣ Break pointer is the initial entry point in heap.\n
+\n‣ brk and sbrk functions are used to set and retrieve the break pointer.\n
+\n‣ Memory allocated in heap remains in existence for the duration of a program.\n
+\n‣ When memory is allocated from heap their addresses grow upwards and heap size decreases, but when memory free, the heap size increases.\n
+\n‣ Free means break pointer is decreasing in the form of last break pointer – malloc size – header size.\n
+\n‣ Every program allocates memory only at load time and run time, but how much memory will be allocated in load time and run time.\n
+\n\t\t‣ If it is decided at compile time it is called static allocation.\n
+\n\t\t‣ If it is decided at run time it is called dynamic memory allocation.\n
+\n‣ Static allocation is a part of Data or BSS area.\n
+\n‣ Automatic allocation: when you declare automatic variables, such as function, actual arguments and local variables in C program they reserve memory when control is entered in scope and are automatically freed when a control leaves the scope.\n
+\n‣ Automatic memory allocation is a part of stack area.\n
+\n‣ Dynamic memory allocation is not supported by C variables; there is no storage class called “dynamic” to allocate memory dynamically from the process memory in run time.\n
+\n‣ realloc()  is used to resize the memory block either allocated by malloc() and  calloc().\n
+\n‣ malloc() memory allocation is a single, dimensional array equivalent and calloc() memory allocation is double dimensional array equivalent.\n
+\n‣ Free memory should not be free again.\n
+\n\n\n\n\n
+    </string>
+    <string name="cfunction">
+‣ Function returns value, function parameters, local automatic variables of a function stores in it stack area.\n
+\n‣ If function return type is bob integer, a prototype is required.\n
+\n‣ Function at a time returns only one value.\n
+\n‣ Copy of the variable is created when it is ‘pass by value’.\n
+\n‣ When a function calls to itself directly or alternate of loop.\n
+\n‣ Function recursion is an alternate of loop.\n
+\n‣ Function recursion always follows LIFO data structure.\n
+\n‣ Library is a special file which hides details about the functionalities of a function.\n
+\n‣ The size of the function is (called Function Frame) manually calculated in the following way:\n
+\n\t‣ Size of local auto variables.
+\n\t‣ Size of function actual parameter.
+\n\t‣ Size of the return address.
+\n\t‣ Size of base address of the next function.\n
+\n‣ When a program is linking with static library, all symbols present in static library will be copied to program.\n
+\n‣ A function can be called in two different ways, such as\n
+\n‣ Function name followed by (),\n
+\n‣ Function pointer.\n
+\n‣ Function is used to modularize the program.\n
+\n‣ Functions are created in stack memory in a form of doubly linked list, which follow LIFO data structure.\n
+\n‣ Every library function is finally converted into system calls.\n
+\n‣ Library functions are user space implementation but system calls are kernel space implementation.\n
+\n\n\n\n\n
+    </string>
+    <string name="cstorage_class">
+‣ Storage class decides the scope, life storage and default initial value of variables, and functions.\n
+\n‣ Storage class follows four kinds of scoping rules such as:\n
+
+\n\t‣ Block scoping,
+\n\t‣ Function scoping,
+\n\t‣ File scoping,
+\n\t‣ Program scoping.\n
+\n‣ static storage class is used in three different places, like:\n
+
+\n\t‣ File scoping,
+\n\t‣ Sharing the same memory location in different frames of function recursion.
+\n\t‣ To avoid reinitialization of a variable.\n
+
+\n‣ External storage class is used for program scoping.\n
+\n‣ If a variable is defined in one file and that can be accessed in another file on the program, we can say variable has a program scoping.\n
+\n‣ If a variable id defined in one file and that can be accessed on another file in the same program, we can say variable has a file scoping.\n
+\n‣ Auto storage class allocates and reallocates memory automatically from stack area.\n
+\n‣ Register variable has no memory address, so pointer cannot work with register variables.\n
+\n‣ Access time of register variable is 1 nanosecond but auto, static and external variable is 200 nanoseconds.\n
+\n\n\n\n\n
+    </string>
+    <string name="cpre_processors">
+‣ When a macro takes a parameter, it is called a parameterize macro or macro call.\n
+\n‣ Start up pragma is executed at first before control goes to main and exit pragma is executed at last once control leaves main.\n
+\n‣ The C pre-processor CPP only process source file such as .c and .cpp but does not process object and executable file.\n
+\n‣ The file inclusion pre-processor directive includes file using “ ” or &lt;> , where  “ ” searches the file from the current directory path and std. include path but &lt;> searches the file only from the std.include path.\n
+\n‣ # is used as string forming where as ## is used as token pasting operator.\n
+    </string>
+    <string name="cstructure_and_union">
+‣ A structure always allocate memory in a form of block and block size depends on the longest data member of the structure.\n
+\n‣ If a structure contains a slack byte, that is called an imbalance structure.\n
+\n‣ Word alignment is required to make imbalance structure to balance structure.\n
+\n‣ A structure can’t be nested within the same structure because it is a restriction in C.\n
+\n‣ A structure can be nested within the same structure if nested structure is a pointer that is called self-referential structure.\n
+\n‣ Structure is used for data encapsulation, memory link and bit-fields.\n
+\n‣ Two structure variables can’t be compared because it is a restriction in C.\n
+\n‣ One structure variable can be assigned to another structure variable if both belongs to same structure.\n
+\n‣ Bit field is a unique feature in C which can be applies to a structure for memory optimization.\n
+\n‣ Each data member in a structure begins at different places.\n
+\n‣ Bit field range must be between 1 and size of the data member.\n
+\n‣ Bit field is not allowed to float data members.\n
+\n‣ The very first member of the union is an active data member and it must be the longest type.\n
+\n‣ Only first member of the Union can be initialized at the time of definition and rest can’t be initialized.\n
+\n‣ Union provides a technique to share a common memory in different way.\n
+\n‣ Union size depends on the longest data member of the union.\n
+\n‣ Union is used for memory optimization, creating message formats and share memory or locking mechanism.\n
+\n‣ Each data member of the union begins at same places, but each data member of a structure begins at different places.\n
+\n‣ Byte offset of the union data member is always 0.\n
+\n‣ To create a memory link or linked list we need a structure and that structure must be a self-referential structure.\n
+\n‣ Data member can be accessed using . or -> notation.\n
+\n\n\n\n\n
+    </string>
+    <string name="cfiles">
+‣ The flow of data from buffer to device or device to buffer is called stream.\n
+\n‣ When data moves from device to buffer it is called an input stream and when it moves from buffer to device, it is called output stream.\n
+\n‣ When OS allocates memory from a kernel space for special use, that memory is called buffer. In Linux buffer size is 4K.\n
+\n‣ The content of a file is stored in data block of the dick.\n
+\n‣ The active file pointer write_ptr and read_ptr move automatically to next character when any read /write operation is perform.\n
+\n‣ When a stream is not associated in memory it’s file description value is -1.\n
+\n‣ getc returns -1 when it reads ctrl+z character.\n
+\n‣ EOF is a macro whose expansion is -1 which is end of file character.\n
+\n‣ File handling is possible using std.library and system calls.\n
+\n‣ Read right operation using std.library and system call are possible in buffer instead of file.\n
+\n‣ When a program is loaded by default stdin, stdout, stderr are also loaded.\n
+\n‣ fwrite and fread only works with low level files.\n
+\n‣ There are three file opening mode such as read, write, append.\n
+\n‣ Program takes input from different input devices, such as keyboard, scanner and mouse. Whereas command line is used as another input media to a program.\n
+\n‣ In command line argument process use argument counter, argument vector and environment vector.\n
+\n‣ Space is used as a separator from one parameter to another parameter in command line argument.\n
+\n‣ Every parameter in Command line argument is f string types.\n
+\n‣ Argument vector and environment vector are array of string types.\n
+\n‣ argc, argv and env are used in command line argument.\n
+\n\n\n\n\n
+    </string>
+    <string name="cmiscellaneous">
+‣ Execution of C program begins at main function but ends at null statement.\n
+\n‣ Width of the Data Bus is known as Word length of the processor.\n
+\n‣ If the programming language uses 16 bits word length then it is called 16 bits programming; if it uses 32 bits word length it is called 32 bits programming.\n
+\n‣ The running of a program in a computer is called process.\n
+\n‣ The process memory of a process is divided into different segments such as code, data, bss, heap and stack segment.\n
+\n‣ How much memory is accessible by the program that depends on the width of the address bus of microprocessor.\n
+\n‣ Page table is used to translate virtual address to physical address in LINUX operating system.\n
+\n‣ Segmentation unit is used to translate logical address to virtual address.\n
+\n‣ To translate a 16 bits offset address and 32 bits far address into 20 bits real address, MSDOS used segments address *16 + offset address.\n
+\n‣ All automatic variables are created in stack area, so that there is always growing down the order.\n
+\n‣ All Intel processors are little endian processors, but Motorola, power pc and Macintosh are big endian processors.\n
+\n‣ Virtual memory is introduced in a system when the memory required is more than the memory available in the system, operating system implements a data structure called “segmentation technique” by which it assigns virtual memory for each process.\n
+\n‣ If a microprocessor permits access to 16MB RAM, then the width of address bus must be 24 bits.\n
+\n‣ The half of the address 0XFFFFF is 0X7FFFF.\n
+\n\n\n\n\n
+    </string>
+    <string name="cdefinations">
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+    </string>
+    <string name="cdifference_between">
+
+       \n <b>1. What is the difference between loop and recursion?</b>\n
+\nLooping is simply executing one piece of code over and over.\n
+\nRecursion also loops through the same code but in recursion a subroutine actually calls itself directly or indirectly.\n
+\n<b>2. Difference between for and while loop?\n</b>
+\nFor loop is suitable for situations when we know in advance how many times the loop will continue.\n
+\nEx – Display all the numbers from 1 to 10. Here we know in advance the loop will continue 10 times, so for is suitable.\n
+\n<b>3. While loop is suitable for situations when we do not know how many times the loop will iterate.\n</b>
+\nEx – count number of bits set to 1 in an integer 375. Here, in advance we do not know what is the binary of 375 and how many bits are set to 1, so while loop is suitable here.\n
+\n<b>4. What is the major difference between | and ||?\n</b>
+\nThe bitwise | operator is used to make a particular bit 1 (ON).\n
+\nThe logical || operator is used to check whether any one of the given expression is true or not. And it always returns either 1 or 0.\n
+\n<b>5. Difference between static library and dynamic library?\n</b>
+\nWhen the program is linked with static library, all the symbols present in the static library, whether or not they are used, are copied to the program and all symbols are resolved at the linking time.\n
+\nWhen the program is linked with dynamic library, all symbols present in the dynamic library are not copied; only those being used are copied and they are resolved at run time of the program.\n
+\n<b>6. Difference between single dimensional array and double dimensional array?\n</b>
+\nSingle-Dimensional array is considered as the” list of variables of similar data types”.\n
+\nDouble dimensional array is used for matrix and non linear data structure.\n
+\n<b>7. Difference between std.library and system calls?</b>
+\nSystem calls can be done from kernel space or user space and executed in kernel space . System calls are faster than std.libraries.\n
+\nEx – write, read, close, open
+\nlibrary can only be called from user program and many do a system call to perform its function like printf that need write system call while other do not need kernel at all like sin(), cos()… .\n
+\nEx  - fopen, fclose, printf, scanf, fscanf.\n
+\n<b>8. Difference between &lt; &gt;  and  “ ” ?\n</b>
+\nIf the file included using &lt; &gt; such as &lt;stdio.h&gt; the preprocessor searches the include file from the standard include path.\n
+\nIf the file is include using “ ” such as “stdio.h”, the preprocessor searches the include file from standard include path and current working directory.\n
+
+\n<b>9. Difference between startup pragma and exit pragma?\n</b>
+\nIf any function is included in startup pragma, it is executed first before the control goes inside the main function.\n
+\nIf any function is included in the exit pragma, it is executed once the control leaves the scope of the main function.\n
+
+\n<b>10. Difference between return and exit?\n</b>
+\nReturn and exit both are used to terminate the child process and send a signal to its parent process. But the return statement also returns a value from a calling function to its caller function.\n
+
+\n<b>11. Difference between process and thread ?\n</b>
+\nAn executing instance of a program is called a process.\n
+\nIt has its own copy of the data segment of the parent process.\n
+\nA thread is a subset of the process.\n
+\nIt has direct access to the data segment of its process.\n
+
+\n<b>12. Difference between precedence and associativity?\n</b>
+\nPrecedence decided which operation will be performed first in an expression.\n
+\nAssociativity decides the order of evaluation, when more than one operation enjoy the same precedence in an expression.\n
+\n<b>13. Difference between reference and dereference in pointer ?\n</b>
+\nReference means the address of any memory location pointer is the only variable which refers to that location.\n
+\nIf read and write operation is doe using the pointer where the pointer refers that is called dereference.\n
+\n
+\n<b>14. Difference between writing a prototype inside and outside of a function?\n</b>
+\nWriting a prototype inside a function only that function will be able to call but other functions cannot call.\n
+\nIf we write prototype above the function all functions can call.\n
+\n
+\n<b>15. Difference between if else and switch case?\n</b>
+\nIf else can have values based on constraints.\n
+\nIn if else, first the condition is verified.\n
+\nSwitch case can have values based on user choice.\n
+\nSwitch case, first checks the cases and then it switches to that particular case.\n
+\n<b>16. Difference between sizeof and strlen?\n</b>
+\nSizeof statement is used to measure the size of any variable or any data types.\n
+\nSizeof command measures the size of string including null character i.e, ‘\0’\n
+\nStrlen measures only the size of a string.\n
+\nStrlen measures the length of string excluding the null character.\n
+\n
+\n<b>17. Difference between break and continue?\n</b>
+\nBreak statement is used to transfer the control to outside the loop and switch…case.\n
+\nContinue statement is used to transfer the control to beginning the loop.\n
+\n<b>18. Difference between macro and typedef?\n</b>
+\n# defined directive creates macro which is handled by a preprocessor(a program run before the actual C compiler) which works like ‘replace all’ in your editor.\n
+\nTypedef is handled by the  C compiler itself, and is an actual definition of a new name of the type.\n
+\n<b>19. Difference between lvalue and rvalue?\n</b>
+\nAn expression that can appear only on the right-hand side of an expression is an rvalue.\n
+\nEx-array name, function name, constant variable.\n
+\n\nAn expression that appears in both left and right side of an assignment operator.\n
+\nEx- variables, pointer and structure.\n
+\n<b>20. Difference between = and ==?\n</b>
+\nThe ‘=’ is an assignment operator which is evaluated from right to left and its left side must always be a variable.\n
+\nThe ‘==’ is a logical comparison operator which checks the equality of two expression.\n
+\n<b>21. Difference between scanf and sscanf?\n</b>
+\nThe scanf function reads data from standard input stream stdin into the locations given by each entry in the argument list.\n
+\nThe sscanf function reads data from buffer into the location given by argument list.\n
+\n
+\n<b>22. Difference between process and program?\n</b>
+\nProcess is program under execution.\n
+\nProcess is stored in main memory.\n
+\nProgram is a set of instruction that can be executed on the computer.\n
+\nProgram is stored in secondary memory.\n
+\n<b>23. Difference between memcpy and memmove?\n</b>
+\nMemcpy() copies the bytes of data between memory blocks. If the block of memory overlaps the function might not work properly.\n
+\nMemmove() is used to deal with overlapping memory  blocks.\n
+\n
+\n<b>24. Difference between text file and binary file?\n</b>
+\nA text file is human readable. They appear in ASCII format.\n
+\nEach character in text file is a 7 data bits signed character.\n
+\nA binary file is not human readable. It contains text data in encoded format.\n
+\nEach character in binary file is 8 data bits or unsigned character.\n
+\n
+\n<b>25. Difference between NUL and NULL?\n</b>
+\nNULL is a macro defines in “stddef.h” for the null pointer, such as ((void*)0).\n
+\nNUL is the name of the first character in ASCII character set. Which correspond to a zero value.\n
+\n<b>26. Difference between while loop and do while loop?\n</b>
+\nIn while loop expression is tested first and then the body is executed.\n
+\nIf the expression is true then it is executed otherwise it is not.\n
+\nIn do while loop, body is executed first and then the expression is tested.\n
+\nIf the expression is true then the body of loop is again executed.\n
+\n<b>27. Difference between array and string?\n</b>
+\nWhen we declare an array of characters it has to be terminated by the null.\n
+\nTermination of null in case of string is automatic.\n
+\n<b>28. Difference between &amp; and &amp;&amp;\n</b>
+\nThe bitwise ‘&amp;’ operator is used to check a particular bit is 0 or 1(ON/OFF) of an integer value.\n
+\nThe logical ‘&amp;&amp;’ operator Is used to check which of the two expression is true or false. The return value is either 0 or 1.\n
+\n<b>29. Difference between ‘.’ And ‘->’?\n</b>
+\nThe notation ‘.’ Is used when structure and union variable is of value type.\n
+\nThe notation ‘->’ is used when variable is a pointer type.\n
+\n<b>30. Difference between i++ and ++i?\n</b>
+\nThe expression i++ is used as a post, then expression uses the variable first before its increments.\n
+\nThe expression ++I is used as pre, the expression first increments the variable before using it.\n
+\n<b>31. Difference between signed integer and unsigned integer?\n</b>
+\nUnsigned modifier can hold a larger positive value and no negative value.\n
+\nSigned integers can hold both positive and negative number.\n
+\n<b>32. Difference between getch() and getche()?\n</b>
+\ngetch() does not display output to screen if used without lvalue.\n
+\ngetche() displays output to screen even if used without lvalue.\n
+\n<b>33. Difference between void main and int main?\n</b>
+\nvoid main ensures that the main function does not return anything.\n
+\nint main is the default return type of every function, which returns something.\n
+\n<b>34. Difference between external variable and global variable?\n</b>
+\nA global variable in c\n
+\n<b>35. Difference between null pointer and a void pointer?\n</b>
+\nNull pointer is a value, where as void pointer is a type.\n
+\n\n\n\n\n
+    </string>
+    <string name="cinterview_questions">
+        \n<b><u>Datatypes</u></b>\n
+\n<b>1.	What is the difference between NUL and NULL?</b>\n
+\n<b>2.	Why is the negative data stored in memory in 2’s complement form?</b>\n
+\n<b>3.	How to input NULL character from the keyboard?</b>\n
+\n<b>4.	Difference between Datatypes and modifiers?</b>\n
+\n<b>5.	Difference between little-endian and big-endian?</b>\n
+\n<b>6.	What is little-endian?</b>\n
+\n<b>7.	What is big-endian?</b>\n
+\n<b><u>Operators</u></b>\n
+\n<b>1.	What is precedence?</b>\n
+\n<b>2.	What is associativity?</b>\n
+\n<b>3.	What is the return value of relational operator?</b>\n
+\n<b>4.	Difference between &amp; and &amp; &amp;?</b>\n
+\n<b><u>Control Structure</u></b>\n
+\n<b>1.	Which loop is an exit control loop?</b>\n
+\n<b>2.	How many statements can fall under the default scope of a control structure?</b>\n
+\n<b>3.	Difference between loop and recursion?</b>\n
+\n<b>4.	What is hanging if in C?</b>\n
+\n<b>5.	Which is faster between switch case and if else?</b>\n
+\n<b>6.	Difference between break and continue?</b>\n
+\n<b>7.	Difference between while and dowhile?</b>\n
+\n\n\n\n\n
+    </string>
+    <string name="coutput_questions">
+        Output Questions
+    </string>
+    <string name="cprograms">
+<![CDATA[
+        <b>1. Program to calculate the factorial of a number</b>\n\n
+main()\n
+{\n
+       \t\t int x,n;\n
+       \t\t printf("Enter a number :");\n
+       \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+       \t\t  x=fact(n);\n
+        \t\t printf("&#34;%d&#34;",x);\n
+}\n
+int fact(int n)\n
+{\n
+      \t\t   int f=1;\n
+      \t\t   while(n>0)\n
+      \t\t   {\n
+               \t\t \t f=f*n;\n
+                \t\t \tn--;\n
+        \t\t }\n
+       \t\t return f;\n
+}\n
+\n
+        <b>2. Program to calculate the sum digits of a number</b>\n
+\n
+main()\n
+{\n
+        \t\t int x,n;\n
+        \t\t printf("E&#34;nter a number :"&#34;);\n
+       \t\t  scanf("&#34;%d&#34;,&amp;n);\n
+      \t\t   x=sum_digit(n);\n
+      \t\t   printf(&#34;"%d&#34;",x);\n
+}\n
+int sum_digit(int n)\n
+{\n
+      \t\t   int s=0;\n
+       \t\t  while(n>0)\n
+      \t\t   {\n
+              \t\t \t  s=s + n%10;\n
+               \t\t \t n=n/10;\n
+      \t\t   }\n
+       \t\t  return s;\n
+}\n
+<b>3. Program to reverse a number</b>\n
+\n
+main()\n
+{\n
+       \t\t  int x,n;\n
+      \t\t   printf("&#34;Enter a number :"&#34;);\n
+       \t\t  scanf("&#34;%d"&#34;,&amp;n);\n
+      \t\t   x=reverse(n);\n
+      \t\t   printf(&#34;"%d"&#34;,x);\n
+}\n
+int reverse(int n)\n
+{\n
+      \t\t   int s=0;\n
+       \t\t  while(n>0)\n
+      \t\t   {\n
+              \t\t \t  s=s *10 + n%10;\n
+               \t\t \t n=n/10;\n
+       \t\t  }\n
+        \t\t return s;\n
+}\n
+\n
+        <b>4. Program to check the number is strong number or not.</b>\n\n
+main()\n
+{\n
+       \t\t  int x,n;\n
+       \t\t  printf("&#34;Enter a number :&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t x=strong(n);\n
+        \t\t if(x==n)\n
+               \t\t \t printf(&#34;"Strong&#34;");\n
+       \t\t  else\n
+                \t\t \tprintf("&#34;Not strong"&#34;);\n
+}\n
+int strong(int n)\n
+{\n
+      \t\t   int s=0,r,f;\n
+      \t\t   while(n>0)\n
+       \t\t  {\n
+            \t\t \t    r=n%10;\n
+               \t\t \t f=fact(r);\n
+              \t\t \t  s=s+f;\n
+             \t\t \t   n=n/10;\n
+       \t\t  }\n
+       \t\t  return s;\n
+}\n
+int fact(int n)\n
+{\n
+        \t\t int f=1;\n\
+        \t\t while(n>0)\n
+        \t\t {\n
+             \t\t \t   f=f*n;\n
+               \t\t \t n--;\n
+        \t\t }\n
+        \t\t return f;\n
+}\n\n
+
+<b>5. Program to calculate the prime factors of a numbers</b>\n
+\nmain()\n
+{\n
+  \t\t       int x,n;\n
+       \t\t  printf("&#34;Enter a number :&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t prime_factors(n);\n
+}\n
+int prime_factors(int n)\n
+{\n
+        \t\t int i=1,k;\n
+        \t\t while(i amplt; =n)\n
+        \t\t {\n
+               \t\t \t if(n%i==0)\n
+                \t\t {\n
+                     \t\t \t   k=check_prime(i);\n
+                        \t\t \tif(k!=0)\n
+                             \t\t\t\t     printf("&#34;%d &#34;",k);\n
+               \t \t\t }\n
+               \t \t\t i++;\n
+        \t\t }\n
+}\n
+int check_prime(int n)\n
+{\n
+        \t\t int i=1;\n
+        \t\t int c=0;\n
+        \t\t while(i amplt; =n)\n
+        \t\t {\n
+               \t\t \t if(n%i==0)\n
+                       \t\t \t\t  c++;\n
+                \t\t \ti++;\n
+        \t\t }\n
+        \t\t if(c==2)\n
+             \t\t \t   return n;\n
+        \t\t else\n
+             \t\t \t   return 0;\n
+}\n\n
+        <b>6. Program to check given number is armstrong or not.</b>\n\n
+main()\n
+{\n
+        \t\t int n,x;\n
+        \t\t printf("&#34;Enter a number:"&#34;);\n
+        \t\t scanf("&#34;%d&#34;",&amp;n);\n
+        \t\t x=armstrong(n);\n
+        \t\t if(x==n)\n
+               \t\t \t printf("&#34;Arm strong&#34;");\n
+        \t\t else\n
+               \t\t \t printf("&#34;Not arm strong"&#34;);\n
+}\n
+\n
+int armstrong(int num)\n
+{\n
+        \t\t int sum=0,r;\n
+        \t\t while(num!=0)\n
+       \t\t  {\n
+            \t\t \t    r=num%10;\n
+                \t\t \tnum=num/10;\n
+                \t\t \tsum=sum+(r*r*r);\n
+        \t\t }\n
+        \t\t return sum;\n
+}\n\n
+<b>7. Program to check given number is palindrome or not.</b>\n\n
+main()\n
+{\n
+        \t\t int n,x;\n
+        \t\t printf("&#34;Enter a number:&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t x=palindrome(n);\n
+        \t\t if(x==n)\n
+               \t\t \t printf(&#34;"Palindrome &#34;");\n
+        \t\t else\n
+             \t\t \t   printf("&#34;Not palindrome &#34;");\n
+}\n
+\n
+int palindrome(int num)\n
+{\n
+        \t\t int r=0;\n
+       \t\t  while(num>0)\n
+        \t\t {\n
+             \t\t \t\t    r=r* 10 + num%10;\n
+                \t\t \t\t num=num/10;\n
+        \t\t }\n
+        \t\t return r;\n
+}\n
+        <b>8. Program to add between any two numbers using loop.</b>\n\n
+main()\n
+{\n
+   \t\t int x;\n
+   \t\t int a,b;\n
+   \t\t printf("&#34;Enter any two numbers :"&#34;);\n
+   \t\t scanf("&#34;%d%d"&#34;,&amp;a,&amp;b);\n
+   \t\t x=add(a,b);\n
+   \t\t printf(&#34;"%d &#34;",x);\n
+}\n
+int add(int a,int b)\n
+{\n
+   \t\t while(a>0)\n
+   \t\t {\n
+      \t\t \t\t b++;\n
+      \t\t \t\t a--;\n
+   \t\t }\n
+   \t\t return b;\n
+}\n\n
+        <b>9. Program to calculate daily expenditure if monthly expenditure is given using loop.</b>\n\n
+main()\n
+{\n
+   \t\t int x,n;\n
+   \t\t printf("&#34;Enter monthely expenditure :&#34;");\n
+   \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+   \t\t x=daily_exp(n);\n\
+   \t\t printf(&#34;"%d "&#34;,x);\n
+        \t\t \t\t }
+        \n
+int daily_exp(int n)\n
+{\n
+   \t\t int c=0;\n
+   \t\t while(n>0)\n
+   \t\t {\n
+      \t\t \t\t c++;\n
+      \t\t \t\t n=n-30;\n
+   \t\t }\n
+   \t\t return c;\n
+}\n
+\n
+       <b>10. Program to count number of bits are set to 1 in an integer.</b>\n
+\n
+main()\n
+{\n
+\n
+   \t\t int x,n;\n
+   \t\t printf("&#34;Enter a number :&#34;");\n
+   \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+   \t\t x=bit_count(n);\n
+   \t\t printf("&#34;%d &#34;",x);\n
+}\n
+int bit_count(int n)\n
+{\n
+   \t\t int c=0;\n
+
+   \t\t while(n>0)\n
+   \t\t \t\t {\n
+      \t\t \t\t \t\t c++;\n
+      \t\t \t\t \t\t n=n&amp;n-1;\n
+        \t\t \t\t }\n
+   \t\t return c;\n
+}\n\n
+        <b>11. Program to calculate G.C.D of any two numbers.</b>\n\n
+main()\n
+{\n
+\n
+        \t\t int n1,n2,x;\n
+        \t\t printf(&#34;"Enter two numbers:&#34;");\n
+        \t\t scanf("&#34;%d%d"&#34;,&amp;n1,&amp;n2);\n
+        \t\t x=gcd(n1,n2);\n
+        \t\t printf(&#34;"%d&#34; ",x);\n
+}\n
+int gcd(int n1,int n2)\n
+{\n
+\n
+        \t\t while(n1!=n2)\n
+        \t\t {\n
+                \t\t \t\t if(n1>n2)\n
+                      \t\t   \t\t \t\t n1=n1-n2;\n
+                \t\t \t\t else\n
+                        \t\t \t\t \t\t n2=n2-n1;\n
+        \t\t }\n
+        \t\t return n1;\n
+}\n
+        <b>12. Program to calculate L.C.M of two numbers.</b>\n\n
+main()\n
+{\n
+\n
+        \t\t int n1,n2,x;\n
+        \t\t printf("&#34;Enter two numbers:&#34;");\n
+        \t\t scanf("&#34;%d%d"&#34;,&amp;n1,&amp;n2);\n
+        \t\t x=lcm(n1,n2);\n
+        \t\t printf("&#34;%d "&#34;,x);\n
+}\n
+int lcm(int n1,int n2)\n
+{\n
+        \t\t int x,y;\n
+        \t\t x=n1,y=n2;\n
+        \t\t while(n1!=n2)\n
+        \t\t {\n
+               \t\t \t\t  if(n1>n2)\n
+                        \t\t \t\t \t\t n1=n1-n2;\n
+                \t\t \t\t else\n
+                        \t\t \t\t \t\t n2=n2-n1;\n
+        \t\t }\n
+        \t\t return x*y/n1;\n
+}\n\n
+        <b>13. Program to calculate fibonacci series</b>\n\n
+main()\n
+{\n
+        \t\t int n;\n
+        \t\t printf("&#34;Enter the number range:&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t fibo(n);\n
+}\n
+int fibo(int n)\n
+{\n
+        \t\t int i=0,j=1,k=2,r,f;\n
+        \t\t printf("&#34;%d %d &#34;", i,j);\n
+        \t\t while(k amplt; n)\n
+        \t\t {\n
+              \t\t \t\t   f=i+j;\n
+                \t\t \t\t i=j;\n
+                \t\t \t\t j=f;\n
+                \t\t \t\t printf(&#34;" %d&#34;",j);\n
+                \t\t \t\t k++;\n
+        \t\t }\n
+}\n\n
+        <b>14. Program to calculate string palindrome.</b>\n\n
+main()\n
+{\n
+        \t\t char x[100],y[100];\n
+        \t\t printf("&#34;Enter a string :&#34;");\n
+        \t\t scanf("&#34;%s"&#34;,x);\n
+        \t\t strcpy(y,x);\n
+        \t\t check_palindrome(x);\n
+        \t\t if(strcmp(x,y)==0)\n
+              \t\t \t\t   printf(&#34;"Palindrome&#34;");\n
+        \t\t else\n
+             \t\t \t\t    printf(&#34;"Not Palindrome&#34;");\n
+}\n
+int check_palindrome(char *x)\n
+{\n
+        \t\t int len=strlen(x);\n
+        \t\t int i;\n
+        \t\t char temp;\n
+        \t\t for(i=0;i amplt; len/2;i++)\n
+        \t\t {\n
+             \t\t \t\t    temp=x[i];\n
+                \t\t \t\t x[i]=x[len-i-1];\n
+                \t\t x[len-i-1]=temp;\n
+        \t\t }\n
+}\n\n
+        <b>15. Program to check the number is Prime number or not.</b>\n\n
+main()\n
+{\n
+        \t\t int n,k;\n
+        \t\t printf("&#34;Enter a number:"&#34;);\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t k=check_prime(n);\n
+        \t\t if(k==2)\n
+             \t\t \t\t    printf(&#34;"Prime&#34;");\n
+        \t\t else\n
+             \t\t \t\t    printf(&#34;"Not prime"&#34;);\n
+}\n
+int check_prime(int n)\n
+{\n
+ \t\t        int i=1,c=0;\n
+      \t\t   while(iamplt;=n)\n
+        \t\t {\n
+             \t\t \t\t    if(n%i==0)\n
+                       \t\t \t\t \t\t  c++;\n
+                \t\t \t\t i++;\n
+        \t\t }\n
+        \t\t return c;\n
+}\n\n
+        <b>16. Program to find largest number in an array.</b>\n\n
+main()\n
+{\n
+        \t\t int a[]={15,67,25,90,40};\n
+        \t\t int k;\n
+        \t\t k=large_number(a);\n
+        \t\t printf("&#34;%d "&#34;,k);\n
+}\n
+int large_number(int a[5])\n
+{\n
+        \t\t int i,big;\n
+        \t\t big=a[0];\n
+        \t\t for(i=1;i amplt; 5;i++)\n
+        \t\t {\n
+             \t\t \t\t    if(big amplt; a[i])\n
+                \t\t \t\t big=a[i];\n
+        \t\t }\n
+        \t\t return big;\n
+}\n
+\n
+
+        <b>19. Program to convert from decimal to binary.</b>\n\n
+main()\n
+{\n
+        \t\t int n;\n
+        \t\t printf("&#34;Enter a number :&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t decimal_binary(n);\n
+\n
+}\n
+int decimal_binary(int n)\n
+{\n
+        \t\t int m,no=0,a=1,rem;\n
+        \t\t m=n;\n
+       \t\t  while(n!=0)\n
+       \t\t  {\n
+            \t\t \t\t     rem=n%2;\n
+                \t\t \t\t no=no+rem*a;\n
+               \t\t \t\t  n=n/2;\n
+               \t\t \t\t  a=a*10;\n
+       \t\t  }\n
+        \t\t printf(&#34;"%d&#34;",no);\n
+}\n\n
+        <b>20. Program to convert binary to decimal.</b>\n\n
+main()\n
+{\n
+        \t\t int n;\n
+        \t\t printf("&#34;Enter data in binary format :V&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+        \t\t binary_decimal(n);\n
+\n
+}\n
+int binary_decimal(int n)\n
+{\n
+       \t\t  int j=1,rem,n1=0;\n
+        \t\t while(n!=0)\n
+       \t\t  {\n
+            \t\t \t\t     rem=n%10;\n
+                \t\t \t\t n1=n1+rem*j;\n
+                \t\t \t\t j=j*2;\n
+                \t\t \t\t n=n/10;\n
+        \t\t }\n
+        \t\t printf(&#34;"%d&#34;",n1);\n
+}\n\n
+
+        <b>21. Program to check the number is perfect number or not.</b>\n\n
+main()\n
+{\n
+        \t\t int n,x;\n
+        \t\t printf("&#34;Enter a number:&#34;");\n
+        \t\t scanf("&#34;%d"&#34;,&amp;n);\n
+      \t\t   x=check_perfect(n);\n
+        \t\t if(x==n)\n
+             \t\t \t\t    printf(&#34;"Perfect number :&#34;");\n
+       \t\t  else\n
+            \t\t \t\t     printf("&#34;Not a perfect number :"&#34;);\n
+
+}\n
+int check_perfect(int  n)\n
+{\n
+        \t\t int s=0,i=1;\n
+       \t\t  while(iamplt;n)\n
+        \t\t {\n
+             \t\t \t\t    if(n%i==0)\n
+                       \t\t \t\t \t\t  s=s+i;\n
+                \t\t \t\t i++;\n
+        \t\t }\n
+        \t\t return s;\n
+}\n
+\n
+
+
+<b>23. Program to check a year is leap year or not.</b>\n\n
+main()\n
+{\n
+       \t\t  int year;\n
+       \t\t  printf(&#34;"Enter the year :&#34;");\n
+        \t\t scanf("V&#34;%d&#34;",&amp;year);\n
+        \t\t if((year % 400==0 )|| ((year % 4==0)&amp;&amp; (year %100!=0)))\n
+             \t\t \t\t    printf(&#34;"Leap Year "&#34;);\n
+        \t\t else\n
+             \t\t \t\t  printf(&#34;"Not leap year&#34;");\n
+}
+]]>
+\n\n\n\n\n\n
+
+
+
+
+
+
+
+
+    </string>
+</resources>

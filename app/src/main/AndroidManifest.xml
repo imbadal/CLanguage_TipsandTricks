@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_lenovo.clanguagetipsandtricks">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tutorials">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Tutorials" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Overview">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Overview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Datatypes">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Datatypes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Operators">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Operators" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ControlStructure">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.ControlStructure" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pointers">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Pointers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Arrays">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Arrays" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DynamicMemory">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.DynamicMemory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Function">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Function" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StorageClass">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.StorageClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PreProcessors">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.PreProcessors" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StructureAndUnion">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.StructureAndUnion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Files">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Files" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Miscellaneous">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Miscellaneous" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Definations">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Definations" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DifferenceBetween">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.DifferenceBetween" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InterviewQuestions">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.InterviewQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OutputQuestions" >
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.OutputQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Programs">
+            <intent-filter>
+                <action android:name="com.example.my_lenovo.clanguagetipsandtricks.Programs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
