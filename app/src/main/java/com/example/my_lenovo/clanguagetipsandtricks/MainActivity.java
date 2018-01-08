@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         OnClickDifferenceBetween();
         OnClickInterviewQuestions();
         OnClickOutputQuestions();
-        OnClickPrograms();
+//        OnClickPrograms();
 
     }
 
@@ -99,16 +99,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void OnClickPrograms() {
-
-        c_programs = (TextView) findViewById(R.id.programs);
-        c_programs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent("com.example.my_lenovo.clanguagetipsandtricks.Programs");
-                startActivity(intent);
-            }
-        });
-
-    }
+//    public void OnClickPrograms() {
+//
+//        c_programs = (TextView) findViewById(R.id.programs);
+//        c_programs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent("com.example.my_lenovo.clanguagetipsandtricks.Programs");
+//                startActivity(intent);
+//            }
+//        });
+//
+//    }
 }
