@@ -275,17 +275,22 @@
 \n‣ The half of the address 0XFFFFF is 0X7FFFF.\n
 \n\n\n\n\n
     </string>
-    <string name="cdefinations">
+    <string name="html">
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
+        <![CDATA[
 
-```python
-s = "Python syntax highlighting"
-print s
-```
+<HTML>
+<body>
+<pre>
+        int a = 20;
+        int b;
+        printf(&#34;%d&#34;,a);
+</pre>
+</body>
+</HTML>
+        ]]>
+
+
     </string>
     <string name="cdifference_between">
 
