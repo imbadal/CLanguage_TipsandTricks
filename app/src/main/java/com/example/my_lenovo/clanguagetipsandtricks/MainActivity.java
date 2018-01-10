@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 import in.uncod.android.bypass.Bypass;
@@ -18,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
     private static TextView c_difference_between;
     private static TextView c_interview_questions;
     private static TextView c_output_questions;
-    private static TextView c_programs;
+    TextView share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         OnClickTextView();
         OnClickDefinations();
         OnClickDifferenceBetween();
@@ -31,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
         OnClickOutputQuestions();
 //        OnClickPrograms();
 
+
+        share = findViewById(R.id.share);
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent i = new Intent(Intent.ACTION_SEND);
+                    i.setType("text/plain");
+                    i.putExtra(Intent.EXTRA_SUBJECT, "C Language - Tips & Tricks");
+                    String sAux = "\nLet me recommend you this application\n\n";
+                    sAux = sAux + "http://theflipzon.com\n";
+                    i.putExtra(Intent.EXTRA_TEXT, sAux);
+                    startActivity(Intent.createChooser(i, "choose one"));
+                } catch(Exception e) {
+                    //e.toString();
+                }
+            }
+        });
     }
 
 

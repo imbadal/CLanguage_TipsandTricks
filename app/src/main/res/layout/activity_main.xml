@@ -124,8 +124,8 @@
                 android:id="@+id/interviewQuestions"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginEnd="8dp"
 
+                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/circle"
@@ -135,8 +135,7 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.118"
+                app:layout_constraintEnd_toStartOf="@+id/share"
                 app:layout_constraintStart_toEndOf="@+id/outputQuestions"
                 app:layout_constraintTop_toBottomOf="@+id/differenceBetween" />
 
@@ -157,6 +156,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="Share"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/definations" />
             <!--<ImageView-->
             <!--android:id="@+id/imageView8"-->
             <!--android:layout_width="60dp"-->
