@@ -82,11 +82,11 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/pointers"
+                android:id="@+id/function"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="5.    Pointers"
+                android:text="5.    Function"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -101,42 +101,14 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/dynamic_memory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="7.    Dynamic Memory"
-                android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+
 
             <TextView
-                android:id="@+id/function"
+                android:id="@+id/pointers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="8.    Function"
-                android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/storage_classes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="9.    Storage Classes"
-                android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/pre_processors"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="10. Pre-Processors"
+                android:text="7.    Pointers"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -146,10 +118,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="11. Structure and Union"
+                android:text="8.    Structure and Union"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dynamic_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="9.    Dynamic Memory"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/storage_classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="10. Storage Classes"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pre_processors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="11. Pre-Processors"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
 
             <TextView
                 android:id="@+id/files"
