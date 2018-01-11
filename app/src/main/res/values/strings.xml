@@ -22,7 +22,72 @@
         \n\n\n\n
     </string>
     <string name="cdatatype">
-<b>Trigraph Characters:</b>\n
+<b>
+    \n<b>Variables:</b>\n
+\n‣Variable is a name to store Data Values.
+\n‣Rules:
+\n‣Must be start with a letter or Underscore
+\n‣No White space is allowed
+\n‣Consists of letters, digits and underscore
+\n
+\n<b>Note:</b>\n
+
+\n‣C is a case sensitive language. So VAR and var are not equal.
+\n
+\n<b>Datatypes:</b>\n
+
+\nchar\t\t\t\t\t\t\t\t	-128 to 127
+\nint\t\t\t\t\t\t\t\t\t	-32,768 to 36,767
+\nfloat\t\t\t\t\t\t\t\t		-3.4e-38 to 3.4e+38
+\ndouble\t\t\t\t\t\t	-1.7e-308 to 1.7e+308
+\n
+\n<b>Size and range of datatypes</b>
+\n
+\nsigned char   \t\t\t\t\t		 8      \t\t\t\t	-128 to 127
+\nunsigned char    \t\t\t	 8      \t\t\t\t	0 to 255
+\nsigned int    \t\t\t\t\t 		16      \t\t\t\t	-32,768 to 36,767
+\nunsigned int  \t\t\t		16      \t\t\t\t	0 to 65535
+\nshort int \t\t\t\t\t\t\t		 8      \t\t\t\t	-127 to 128
+\nlong int  \t\t\t\t\t\t\t		32      \t\t\t\t	-2,147,483,648 to 2,147,483,647
+\nfloat     \t\t\t\t\t\t\t\t\t 			32      \t\t\t\t	-3.4e-38 to 3.4e+38
+\ndouble    \t\t\t\t\t\t\t\t		64      \t\t\t\t	-1.7e-308 to 1.7e+308
+\nlong double   \t\t\t\t		80      \t\t\t\t	3.4e-4932 to 1.1e+4932
+\n
+\n<b>Note:</b>\n
+\n‣datatypes are by default signed.
+\n‣Ex: int is equivalent to signed int
+\n
+\n
+\n<b>Simple C Program:</b>\n
+\nmain()\n
+\n{\n
+\n\t\tint a, b, sum;
+\n\t\t//Declare 3 variables\n
+\n\t\tscanf(“%d %d”,&amp;a, &amp;b);
+\n\t\t//User input for variable a and b\n
+\n\t\tsum = a+b;
+\n\t\t\// add a and b, store the result in sum\n
+\n\t\tprintf(“\\n%d”,sum); 	\n\t\t//print sum\n
+\n}
+\n
+\n<b>Note:</b>\n
+\n‣toupper converts lowercase arguments to uppercase.
+\n‣tolower converts uppercase arguments to lowercase.
+\n
+\n<b>Format Specification:</b>\n
+\nchar  \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t				%c
+\nint   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t			%d
+\nshort int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t			%h
+\ndecimal int   \t\t\t\t\t\t\t\t\t\t\t\t			%i
+\nhexa-decimal int  \t\t\t\t\t\t\t\t		%x, %i
+\noctal int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t			%o, %i
+\nfloat int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t			%f
+\nstring    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t				%s
+\nunsigned decimal int  \t\t\t\t	%u
+\n
+
+
+\nTrigraph Characters:</b>\n
 \n‣Trigraph characters are user in the keyboard those does not supports all the ANSI C characters.\n
 
 \n‣We can use the characters in program by using Trigraphs.\n
@@ -120,73 +185,11 @@
 \n\\\\    \t\t\t\t\t	\\
 \n\\0    \t\t\t\t	null
 \n
-\n<b>Variables:</b>\n
-\n‣Variable is a name to store Data Values.
-\n‣Rules:
-\n‣Must be start with a letter or Underscore
-\n‣No White space is allowed
-\n‣Consists of letters, digits and underscore
 \n
-\n<b>Note:</b>\n
-
-\n‣C is a case sensitive language. So VAR and var are not equal.
-\n
-\n<b>Datatypes:</b>\n
-
-\nchar\t\t\t\t\t\t\t\t	-128 to 127
-\nint\t\t\t\t\t\t\t\t\t	-32,768 to 36,767
-\nfloat\t\t\t\t\t\t\t\t		-3.4e-38 to 3.4e+38
-\ndouble\t\t\t\t\t\t	-1.7e-308 to 1.7e+308
-\n
-\n<b>Size and range of datatypes</b>
-\n
-\nsigned char   \t\t\t\t\t		 8      \t\t\t\t	-128 to 127
-\nunsigned char    \t\t\t	 8      \t\t\t\t	0 to 255
-\nsigned int    \t\t\t\t\t 		16      \t\t\t\t	-32,768 to 36,767
-\nunsigned int  \t\t\t		16      \t\t\t\t	0 to 65535
-\nshort int \t\t\t\t\t\t\t		 8      \t\t\t\t	-127 to 128
-\nlong int  \t\t\t\t\t\t\t		32      \t\t\t\t	-2,147,483,648 to 2,147,483,647
-\nfloat     \t\t\t\t\t\t\t\t\t 			32      \t\t\t\t	-3.4e-38 to 3.4e+38
-\ndouble    \t\t\t\t\t\t\t\t		64      \t\t\t\t	-1.7e-308 to 1.7e+308
-\nlong double   \t\t\t\t		80      \t\t\t\t	3.4e-4932 to 1.1e+4932
-\n
-\n<b>Note:</b>\n
-\n‣datatypes are by default signed.
-\n‣Ex: int is equivalent to signed int
-\n
-\n
-\n<b>Simple C Program:</b>\n
-\nmain()\n
-\n{\n
-\n\t\tint a, b, sum;
-\n\t\t//Declare 3 variables\n
-\n\t\tscanf(“%d %d”,&amp;a, &amp;b);
-\n\t\t//User input for variable a and b\n
-\n\t\tsum = a+b;
-\n\t\t\// add a and b, store the result in sum\n
-\n\t\tprintf(“\\n%d”,sum); 	\n\t\t//print sum\n
-\n}
-\n
-\n<b>Note:</b>\n
-\n‣toupper converts lowercase arguments to uppercase.
-\n‣tolower converts uppercase arguments to lowercase.
-\n
-\n<b>Format Specification:</b>\n
-\nchar  \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t				%c
-\nint   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t			%d
-\nshort int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t			%h
-\ndecimal int   \t\t\t\t\t\t\t\t\t\t\t\t			%i
-\nhexa-decimal int  \t\t\t\t\t\t\t\t		%x, %i
-\noctal int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t			%o, %i
-\nfloat int     \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t			%f
-\nstring    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t				%s
-\nunsigned decimal int  \t\t\t\t	%u
-\n\n
-
 \n<b>Important Points:</b>\n
 \n\n ‣ Data will be stored in memory in ABCD or DCBA format that depends on Endianness of the system. \n
 \n	‣ In little-endian systems data is stored in DCBA order.\n
-\n	‣ In big-endian systems data is stored in DCBA order. \n
+\n	‣ In big-endian systems data is stored in ABCD order. \n
 \n	‣ Cycle is present in integer and character data type but is not present in float or double types.\n
 \n	‣ Increment the value of a float or a double variable beyond its maximum range that is +INF and beyond it minimum range –INF.\n
 \n	‣ The minimum octal character constant is ‘\000’ and maximum octal character constant is ‘\377’.\n
@@ -460,7 +463,9 @@
 \nint fun(int, int);
 \nint (*fun_ptr)();
 \nfun_ptr = fun;
-\nVoid Pointer:\n
+        \n<b>Void Pointer:</b>b>\n
+
+\n‣Pointer that can hold address of any type of variable is called void pointer.\n
 
 \n<b>Null Pointers:</b>\n
 \n‣When a pointer refers to the initial (0th address) address in memory, that is called Null pointer.\n
@@ -469,6 +474,8 @@
 \n‣Ex:\n
 \nint *ptr;\n
 
+\n<b>Generic Pointer:</b>\n
+\n‣Pointer that can't be dereference is called generic pointer.\n
 \n<b>Dangling Pointer:</b>\n
 \n‣When a pointer refers to an unallocated memory address, that pointer is called Dangling pointer. \n
 \n<b>Dereference:</b>\n
@@ -986,136 +993,356 @@ struct book1, book2, book3;\n\n
 \n\n\n\n\n
     </string>
     <string name="c_def">
-       \n<b>1. What is the difference between loop and recursion?</b>\n
-\nLooping is simply executing one piece of code over and over.\n
-\nRecursion also loops through the same code but in recursion a subroutine actually calls itself directly or indirectly.\n
-\n<b>2. Difference between for and while loop?\n</b>
-\nFor loop is suitable for situations when we know in advance how many times the loop will continue.\n
-\nEx – Display all the numbers from 1 to 10. Here we know in advance the loop will continue 10 times, so for is suitable.\n
-\n<b>3. While loop is suitable for situations when we do not know how many times the loop will iterate.\n</b>
-\nEx – count number of bits set to 1 in an integer 375. Here, in advance we do not know what is the binary of 375 and how many bits are set to 1, so while loop is suitable here.\n
-\n<b>4. What is the major difference between | and ||?\n</b>
-\nThe bitwise | operator is used to make a particular bit 1 (ON).\n
-\nThe logical || operator is used to check whether any one of the given expression is true or not. And it always returns either 1 or 0.\n
-\n<b>5. Difference between static library and dynamic library?\n</b>
-\nWhen the program is linked with static library, all the symbols present in the static library, whether or not they are used, are copied to the program and all symbols are resolved at the linking time.\n
-\nWhen the program is linked with dynamic library, all symbols present in the dynamic library are not copied; only those being used are copied and they are resolved at run time of the program.\n
-\n<b>6. Difference between single dimensional array and double dimensional array?\n</b>
-\nSingle-Dimensional array is considered as the” list of variables of similar data types”.\n
-\nDouble dimensional array is used for matrix and non linear data structure.\n
-\n<b>7. Difference between std.library and system calls?</b>
-\nSystem calls can be done from kernel space or user space and executed in kernel space . System calls are faster than std.libraries.\n
-\nEx – write, read, close, open
-\nlibrary can only be called from user program and many do a system call to perform its function like printf that need write system call while other do not need kernel at all like sin(), cos()… .\n
-\nEx  - fopen, fclose, printf, scanf, fscanf.\n
-\n<b>8. Difference between &lt; &gt;  and  “ ” ?\n</b>
-\nIf the file included using &lt; &gt; such as &lt;stdio.h&gt; the preprocessor searches the include file from the standard include path.\n
-\nIf the file is include using “ ” such as “stdio.h”, the preprocessor searches the include file from standard include path and current working directory.\n
 
-\n<b>9. Difference between startup pragma and exit pragma?\n</b>
-\nIf any function is included in startup pragma, it is executed first before the control goes inside the main function.\n
-\nIf any function is included in the exit pragma, it is executed once the control leaves the scope of the main function.\n
 
-\n<b>10. Difference between return and exit?\n</b>
-\nReturn and exit both are used to terminate the child process and send a signal to its parent process. But the return statement also returns a value from a calling function to its caller function.\n
+<b><u>A:</u></b>\n
+\n<b>Array:</b>\n
+\n An array is a variable which only holds similar types of data elements.\n
+\n<b>Actual Parameter :</b>\n
+\n‣Parameters which are passed in the function call are called actual parameter.\n
+\n‣Ex: sum(2,4);\n
 
-\n<b>11. Difference between process and thread ?\n</b>
-\nAn executing instance of a program is called a process.\n
-\nIt has its own copy of the data segment of the parent process.\n
-\nA thread is a subset of the process.\n
-\nIt has direct access to the data segment of its process.\n
+\n<b>Automatic Variables(auto):</b>\n
+\n‣auto is the default storage class for all the local variables.\n
+\n‣auto can only be used within a function.\n
+\n‣Ex:\n
+\n{
+\n\t\tint count;
+\n\t\tauto int num;
+\n}\n
+\n‣“int count” is same as “auto int count”.\n
 
-\n<b>12. Difference between precedence and associativity?\n</b>
-\nPrecedence decided which operation will be performed first in an expression.\n
-\nAssociativity decides the order of evaluation, when more than one operation enjoy the same precedence in an expression.\n
-\n<b>13. Difference between reference and dereference in pointer ?\n</b>
-\nReference means the address of any memory location pointer is the only variable which refers to that location.\n
-\nIf read and write operation is doe using the pointer where the pointer refers that is called dereference.\n
-\n
-\n<b>14. Difference between writing a prototype inside and outside of a function?\n</b>
-\nWriting a prototype inside a function only that function will be able to call but other functions cannot call.\n
-\nIf we write prototype above the function all functions can call.\n
-\n
-\n<b>15. Difference between if else and switch case?\n</b>
-\nIf else can have values based on constraints.\n
-\nIn if else, first the condition is verified.\n
-\nSwitch case can have values based on user choice.\n
-\nSwitch case, first checks the cases and then it switches to that particular case.\n
-\n<b>16. Difference between sizeof and strlen?\n</b>
-\nSizeof statement is used to measure the size of any variable or any data types.\n
-\nSizeof command measures the size of string including null character i.e, ‘\0’\n
-\nStrlen measures only the size of a string.\n
-\nStrlen measures the length of string excluding the null character.\n
-\n
-\n<b>17. Difference between break and continue?\n</b>
-\nBreak statement is used to transfer the control to outside the loop and switch…case.\n
-\nContinue statement is used to transfer the control to beginning the loop.\n
-\n<b>18. Difference between macro and typedef?\n</b>
-\n# defined directive creates macro which is handled by a preprocessor(a program run before the actual C compiler) which works like ‘replace all’ in your editor.\n
-\nTypedef is handled by the  C compiler itself, and is an actual definition of a new name of the type.\n
-\n<b>19. Difference between lvalue and rvalue?\n</b>
-\nAn expression that can appear only on the right-hand side of an expression is an rvalue.\n
-\nEx-array name, function name, constant variable.\n
-\n\nAn expression that appears in both left and right side of an assignment operator.\n
-\nEx- variables, pointer and structure.\n
-\n<b>20. Difference between = and ==?\n</b>
-\nThe ‘=’ is an assignment operator which is evaluated from right to left and its left side must always be a variable.\n
-\nThe ‘==’ is a logical comparison operator which checks the equality of two expression.\n
-\n<b>21. Difference between scanf and sscanf?\n</b>
-\nThe scanf function reads data from standard input stream stdin into the locations given by each entry in the argument list.\n
-\nThe sscanf function reads data from buffer into the location given by argument list.\n
-\n
-\n<b>22. Difference between process and program?\n</b>
-\nProcess is program under execution.\n
-\nProcess is stored in main memory.\n
-\nProgram is a set of instruction that can be executed on the computer.\n
-\nProgram is stored in secondary memory.\n
-\n<b>23. Difference between memcpy and memmove?\n</b>
-\nMemcpy() copies the bytes of data between memory blocks. If the block of memory overlaps the function might not work properly.\n
-\nMemmove() is used to deal with overlapping memory  blocks.\n
-\n
-\n<b>24. Difference between text file and binary file?\n</b>
-\nA text file is human readable. They appear in ASCII format.\n
-\nEach character in text file is a 7 data bits signed character.\n
-\nA binary file is not human readable. It contains text data in encoded format.\n
-\nEach character in binary file is 8 data bits or unsigned character.\n
-\n
-\n<b>25. Difference between NUL and NULL?\n</b>
-\nNULL is a macro defines in “stddef.h” for the null pointer, such as ((void*)0).\n
-\nNUL is the name of the first character in ASCII character set. Which correspond to a zero value.\n
-\n<b>26. Difference between while loop and do while loop?\n</b>
-\nIn while loop expression is tested first and then the body is executed.\n
-\nIf the expression is true then it is executed otherwise it is not.\n
-\nIn do while loop, body is executed first and then the expression is tested.\n
-\nIf the expression is true then the body of loop is again executed.\n
-\n<b>27. Difference between array and string?\n</b>
-\nWhen we declare an array of characters it has to be terminated by the null.\n
-\nTermination of null in case of string is automatic.\n
-\n<b>28. Difference between &amp; and &amp;&amp;\n</b>
-\nThe bitwise ‘&amp;’ operator is used to check a particular bit is 0 or 1(ON/OFF) of an integer value.\n
-\nThe logical ‘&amp;&amp;’ operator Is used to check which of the two expression is true or false. The return value is either 0 or 1.\n
-\n<b>29. Difference between ‘.’ And ‘->’?\n</b>
-\nThe notation ‘.’ Is used when structure and union variable is of value type.\n
-\nThe notation ‘->’ is used when variable is a pointer type.\n
-\n<b>30. Difference between i++ and ++i?\n</b>
-\nThe expression i++ is used as a post, then expression uses the variable first before its increments.\n
-\nThe expression ++I is used as pre, the expression first increments the variable before using it.\n
-\n<b>31. Difference between signed integer and unsigned integer?\n</b>
-\nUnsigned modifier can hold a larger positive value and no negative value.\n
-\nSigned integers can hold both positive and negative number.\n
-\n<b>32. Difference between getch() and getche()?\n</b>
-\ngetch() does not display output to screen if used without lvalue.\n
-\ngetche() displays output to screen even if used without lvalue.\n
-\n<b>33. Difference between void main and int main?\n</b>
-\nvoid main ensures that the main function does not return anything.\n
-\nint main is the default return type of every function, which returns something.\n
-\n<b>34. Difference between external variable and global variable?\n</b>
-\nA global variable in c\n
-\n<b>35. Difference between null pointer and a void pointer?\n</b>
-\nNull pointer is a value, where as void pointer is a type.\n
-\n\n\n\n\n
 
-    </string>
+\n<b><u>B:</u></b>\n
+
+
+\n<b><u>C:</u></b>\n
+        \n<b>calloc:</b>\n
+\n<b>Call Value:</b>\n
+\n‣When the formal parameter holds a copy of actual parameter that is called Call by Value. \n
+\n‣In call by value changes in formal parameter does not affect actual parameters. \n
+\n‣Ex: \n
+\nvoid main()
+\n{
+\n\t\t int x=10, y=20;
+\n\t\t swap(x, y);
+
+\n}
+\nvoid sum(int a, int b)
+\n{
+\n\t\t int temp;
+\n\t\t temp=x;
+\n\t\t x=y;
+\n\t\t y=temp;
+\n\t\t printf(“%d %d”,x,y);
+\n}
+\n
+\n<b> Call by Reference:</b>\n
+\n‣When the formal parameter holds the reference of actual parameter that is called Call by Reference. \n
+\n‣In call by reference, changes in formal parameter affects actual parameters. \n
+
+
+\n‣Ex:
+\nvoid main()
+\n{
+\n\t\t int x=10, y=20;
+\n\t\t swap(&amp;x, &amp;y);
+\n\t\t printf(“%d %d”,x,y);
+\n}
+\nvoid sum(int *a, int *b)
+\n{
+\n\t\t int temp;
+\n\t\t temp=*x;
+\n\t\t *x=*y;
+\n\t\t *y=temp;
+\n}
+\n
+\n‣calloc allocates request size of memory and returns a pointer.\n
+\n‣calloc allocates multiple blocks of memories.\n
+\n‣Allocated blocks initialized to zero in default.\n
+\n‣Syntax:\n
+\nptr = (return_type *) calloc(num_of_blocks, size);\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) calloc(2, 8);
+\nptr = (int *) calloc(1, sizeof(int));
+\nptr = (int *) calloc(4, 10 * sizeof(int));\n
+
+\n<b><u>D:</u></b>\n
+        \n<b>Dangling Pointer:</b>\n
+\n‣When a pointer refers to an unallocated memory address, that pointer is called Dangling pointer. \n
+\n<b>Dereference:</b>\n
+\n‣Doing operations (read/write) in memory using the help of pointer is called Dereference.\n
+\n<b>Near and Far Pointer:</b>\n
+\n‣When a pointer refers to an address in same segment, it is called Near pointer. \n
+\n‣When a pointer refers to an address in different segment, it is called Far pointer. \n
+
+
+\n<b><u>E:</u></b>\n
+
+        \n<b>External Variables(extern):</b>\n
+\n‣External variables are visible globally to all program files.\n
+\n‣Ex:\n
+\nextern int count;
+\nextern int fun();
+\nmain()
+\n{
+\n
+\n}\n
+
+
+\n<b><u>F:</u></b>\n
+        \n<b>free:</b>\n
+\n‣free is used to delete an allocated memory block.\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) calloc(10, sizeof(int));
+\nfree(ptr);\n
+
+\n<b>Function:</b>\n
+\n‣Function is a set of codes to perform a particular task.\n
+
+
+\n<b>Function Declaration or Prototype</b>\n
+\n‣Syntax: \n
+\nreturn_type Function_Name(datatype of arguments); \n
+\n‣Ex: int function_name(int, int); \n
+\n<b>Function Definition:</b>\n
+\n‣Syntax: \n
+\nreturn_type Function_Name(arguments with datatypes); \n
+\n‣Ex: int function_name(int x, int y); \n
+
+\n<b>Function Call: </b>\n
+\n‣Syntax: \n
+\nfunction_name(arguments without datatype); \n
+\n‣Ex: function_name(x, y); \n
+
+\n<b> Formal Parameter</b>\n
+\n‣Parameters which are received in the function definition are called formal parameter.\n
+\n‣Ex:
+ \nint sum(int x, int y)
+\n{
+\n
+\n}
+\n
+
+
+
+\n<b><u>G:</u></b>\n
+
+        \n<b>Generic Pointer:</b>\n
+\n‣Pointer that can't be dereference is called generic pointer.\n
+
+
+\n<b><u>H:</u></b>\n
+
+\n<b><u>I:</u></b>\n
+        \n<b>Identifiers:</b>\n
+\n‣Identifiers refers to any name (variable name, array, function, file etc) in C program.\n
+\nRules:\ n
+\n‣First character must be an alphabet or underscore (_)\n
+\n‣Consist of letters, Underscore and digits \n
+\n‣Can’t be a keyword\n
+\n‣No white space is allowed\n
+
+
+
+\n<b><u>J:</u></b>\n
+
+
+\n<b><u>K:</u></b>\n
+
+
+
+\n<b><u>L:</u></b>\n
+
+
+
+\n<b><u>M:</u></b>\n
+
+        \n<b>Memory Leak:</b>\n
+\n‣When a pointer loses reference of a memory block, it is called memory leak.\n
+
+
+\n<b>malloc:</b>\n
+\n‣malloc allocates request size of bytes and returns a pointer.\n
+\n‣malloc allocates a single block of memory.\n
+\n‣Allocated blocks hold garbage values in default.\n
+\n‣Syntax:\n
+\nptr = (return_type *) malloc(size);\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) malloc(8);
+\nptr = (int *) malloc(sizeof(int));
+\nptr = (int *) malloc(10 * sizeof(int));\n
+
+
+\n<b><u>N:</u></b>\n
+
+\n<b>Null Pointers:</b>\n
+\n‣When a pointer refers to the initial (0th address) address in memory, that is called Null pointer.\n
+
+
+ \n<b>Nested Function:</b> \n
+\n‣When a function definition holds another function definition inside it, called Nested Function. \n
+\n‣Ex:
+\nint function1(int x, int y)
+\n{
+\n\t\tint function2()
+\n\t\t{
+\n\t\t\t\t//Nested Function
+\n\t\t}
+\n}\n
+
+\n<b><u>O:</u></b>\n
+
+
+
+
+\n<b><u>P:</u></b>\n
+      \n<b>Pointer:</b>\n
+        \n‣Pointer is a derived data type which stores address of a variable.\n
+\n<b>Pointer to Pointer (Chaining of Pointer):</b>\n
+\n‣When a pointer holds address of another pointer variable, it is called pointer to pointer or chaining of pointers.\n
+\n‣Ex:
+\n  int a;
+\nint *ptr1 =&amp;a;
+       \n int *ptr2 =&amp;ptr1;\n
+\n<b>Pointer to Function:</b>\n
+\n‣As the pointer has a memory address, we can declare a pointer to a function.\n
+\n‣Syntax:\n
+\nreturn_type (*fun_ptr) ();\n
+
+\n‣Ex:\n
+\nint fun(int, int);
+\nint (*fun_ptr)();
+\nfun_ptr = fun;
+
+
+\n<b>Pre Defined Function</b>\n
+
+\n‣These functions are defined by the system and stored in different libraries.\n
+
+\n‣Ex: printf(), scanf()\n
+
+
+
+\n<b><u>Q:</u></b>\n
+
+
+\n<b><u>R:</u></b>\n
+
+        \n<b>realloc:</b>\n
+\n‣realloc is used to modify the size of a previously allocated memory.\n
+\n‣Syntax:\n
+\nptr = (return_type *) realloc(ptr_variable, new_size);\n
+\n‣Ex:\n
+\nint *ptr;\n
+\nptr = (int *) realloc(ptr, 8);\n
+\nptr = (int *) realloc(ptr, sizeof(int));\n
+\nptr = (int *) realloc(ptr, 128);\n
+
+
+\n<b>Recursion:</b>\n
+\n‣When a function call itself, is known as function recursion.\n
+\n‣Ex:
+\nint sum(int x, int y)
+\n{
+\n\t\tint s = x+y;
+\n\t\tsum();
+\n}
+\n
+
+\n<b>Register Variables(register):</b>\n
+\n‣Variables with register storage class are stored in the register instead of RAM.\n
+\n‣Register variables are accessed faster than any other variables. \n
+\n‣Ex:\n
+\n{
+\n\t\tregister int count;
+\n}\n
+
+
+\n<b><u>S:</u></b>\n
+        \n<b>Static Variables (static):</b>\n
+\n‣Static variables are created every time the function executes.\n
+\n‣Once the function control goes out of the function, static variables are destroyed immediately.\n
+\n‣static can be used in both local and global variables. \n
+\n‣Ex:\n
+\nstatic int count = 7;
+\nint fun()
+\n{
+\n\t\tcount++;
+\n\t\tprintf(“%d”,count);
+\n}\n
+\n‣Output will be 8 for every time the function calls.\n
+
+\n<b>Storage Classes:</b>\n
+\n Storage class decides the scope, life storage and default initial value of variables, and functions.\n
+
+
+\n<b><u>T:</u></b>\n
+\n<b>Tokens:</b>\n
+\n‣Smallest individual unit in a c program like (word, symbol etc) is called Token.\n
+
+
+\n<b>Trigraph Characters:</b>\n
+    \n‣Trigraph characters are user in the keyboard those does not supports all the ANSI C characters.\n
+
+    \n‣We can use the characters in program by using Trigraphs.\n
+
+    \n??=  \t\t\t\t\t \t    #\n
+    \n??(  \t\t\t\t\t \t \t     [\n
+    \n??)  \t\t\t\t\t \t \t    ]\n
+    \n??&lt; \t\t\t\t\t \t   { \n
+    \n??>  \t\t\t\t\t \t    } \n
+    \n??!  \t\t\t\t\t \t \t     |\n
+    \n??/  \t\t\t\t\t \t \t     \\
+    \n\n??-    \t\t\t\t\t \t \t     ^\n
+
+
+
+    \n<b><u>U:</u></b>\n
+
+    \n<b>User Defined Function\n</b>\n
+    \n‣These functions are defined by the user in the program. \n
+
+
+
+    \n<b><u>V:</u></b>\n
+
+    \n<b>Variables:</b>\n
+    \n‣Variable is a name to store Data Values.
+    \n‣Rules:
+    \n‣Must be start with a letter or Underscore
+    \n‣No White space is allowed
+    \n‣Consists of letters, digits and underscore
+    \n
+    \n<b>Void Pointer:</b>b>\n
+
+    \n‣Pointer that can hold address of any type of variable is called void pointer.\n
+
+
+    \n<b><u>W:</u></b>\n
+    \n<b>Wild Pointer:</b>\n
+    \n‣Uninitialized pointers are called wild pointers.\n
+    \n‣Ex:\n
+    \nint *ptr;\n
+
+
+
+    \n<b><u>X:</u></b>\n
+
+
+
+    \n<b><u>Y:</u></b>\n
+
+
+    \n<b><u>Z:</u></b>\n
+
+
+
+
+</string>
     <string name="cdifference_between">
 
        \n<b>1. What is the difference between loop and recursion?</b>\n
