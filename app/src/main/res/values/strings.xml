@@ -231,7 +231,166 @@
 \n\n\n\n\n
     </string>
     <string name="ccontrol_structure">
-      ‣ Hanging if is not allowed in C.\n
+
+<b>if Condition:</b>\n
+\n‣if is a conditional statement which has two prospectives for the condition is true or false.\n
+\n‣Syntax:\n
+\n       if(condition)
+\n      {
+\n          \t\t//statements
+\n      }
+\n
+\n‣Ex:\n
+\nif(x == 20)
+\n{
+\n	\t\ty=y+20;
+\n	\t\t… // code
+\n}\n
+\n‣if statement returns 1 or 0.\n
+\n‣If the condition is true, it returns 1 otherwise returns 0.\n
+
+\n‣Curly brace is optional for an ‘if’ condition having one line of code.\n
+
+\nif (x == 10)
+\n	\t\ty = 20;
+\n
+\n‣Curly brace is mandatory for an ‘if’ condition having multiple lines of code.
+\n
+\nif (x == 10)
+\n{
+\n	\t\ty = 20;
+\n	\t\tz = 10;
+\n}
+\n
+\n<b>if else:</b>\n
+
+\nif(condition)
+\n{
+\n	\t\t… //statement
+\n} else
+\n{
+\n	\t\t… //statement
+\n}
+\n
+\n‣If the ‘ if condition ‘ is TRUE then if block will be executed.\n
+\n‣If the ‘ if condition ‘ is FLASE then else block will be executed.\n
+
+\n<b>else if:</b>\n
+
+\nif(condition) {
+\n	\t\t… //statement
+\n} else if {
+\n	\t\t… //statement
+\n} else if {
+\n	\t\t… //statement
+\n.
+\n.
+\n.
+\n} else {
+\n	\t\t… //statement
+\n}
+\n
+\n‣Else if holds multiple conditional statements.\n
+\n‣That one will be executes Which condition is true otherwise the else part executes.\n
+
+\n<b>Nested if:</b>\n
+
+\n‣When an if statement holds another if statement within it, called Nested if.
+\n
+\nif(condition)
+\n{
+\n	\t\tif(condition)
+        \n\t\t\t\t{
+\n	\t\t\t\t//statement
+\n\t\t}
+\n\t\t//statements
+\n}
+
+\n
+\n<b>Loop:</b>\n
+
+\n‣Every loop runs under a test condition. Loop executes until the test condition returns 0 (flase).\n
+\n‣The loop is called infinity loop if it’s execution never stops.\n
+\n‣Ex:
+\nint i = 11;
+\nWhile(i>10)
+\n{
+	\n\t\ti++;
+\n}
+\n
+\n<b>while loop:</b>\n
+
+\n‣While is an entry controlled loop.
+\n
+\nwhile (condition) {
+	\n\t\t// statements
+\n}
+\n
+\nEx:\n
+\nint a = 1;		\t\t//initialization
+\nwhile(a &lt; 5) 		\t//condition
+\n{
+\n	\t\tx = x+a;
+\n	\t\ta++;	\t\t//increment or decrement
+\n}
+
+\n
+\n<b>do while:</b>\n
+
+\n‣do while is an exit control loop.\n
+\n‣It executes once even the test condition is false.
+\n
+\ndo {\n
+\n	\t\t//statements\n
+\n} while(condition)
+
+\n
+\nEx:\n
+\nint y=1;\n
+\ndo {\n
+\n\t\ty++;\n
+\n} while(y&lt;=20)\n
+\n
+\n<b>for loop:</b>\n
+
+\n‣syntax:\n
+
+\nfor(initialization; condition; increment or decrement){\n
+	\t\t//statements\n
+}\n
+\n<b>Different styles of for loop:</b>\n
+\nEx:\n
+\n‣int i;\n
+\nfor(i=0; i&lt;20; i++){\n
+\n	\t\t//statements\n
+}\n
+\n
+\n‣for(int i=0; i&lt;20; i++){\n
+\n	\t\t//statements\n
+}\n
+\n
+\n‣for(int i=0, j=10; i&lt;20,j>1; i++,j—){\n
+\n	\t\t//statements\n
+}\n
+
+\n‣int i=0;\n
+\nfor(; i&lt;20;){\n
+\n	\t\t//statements\n
+\n	\t\ti++;\n
+\n}\n
+
+\n‣for(int i=0; i&lt;20;){\n
+\n	\t\t//statements\n
+\n	 \t\ti++;\n
+\n}\n
+
+\n<b>Note:</b>\n
+
+\n‣In for and while loop, if there is only one line of statement inside the loop then { } is optional.\n
+
+\n
+\n<b>Important Points</b>\n
+\n‣ Hanging if is not allowed in C.\n
 \n‣ The if statement is used for checking range and the yes/no problem.\n
 \n‣ Else is the optional part of if.\n
 \n‣ Execution of switch case starts from the match case.\n
@@ -259,6 +418,7 @@
 \n‣ Loop is faster than function recursion.\n
 \n‣ Only one statement falls under the default scope of the control structure.\n
 \n\n\n\n\n
+
     </string>
     <string name="cpointers">
 ‣ When a pointer refers to 0 (zero) address, it is called null pointer.\n
