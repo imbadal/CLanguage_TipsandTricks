@@ -110,7 +110,7 @@
 \n\\a   \t\t\t\t	alert
 \n\\b   \t\t\t\t	back space
 \n\\f   \t\t\t\t\t	form feed
-\n\\n   \t\t\t\t	new line
+\n\\n  \t\t\t\t	new line
 \n\\r   \t\t\t\t\t	carriage return
 \n\\t   \t\t\t\t\t	horizontal tab
 \n\\v   \t\t\t\t	vertical tab
@@ -184,7 +184,7 @@
 \n\n
 
 \n<b>Important Points:</b>\n
-\n\n  ‣ Data will be stored in memory in ABCD or DCBA format that depends on Endianness of the system. \n
+\n\n ‣ Data will be stored in memory in ABCD or DCBA format that depends on Endianness of the system. \n
 \n	‣ In little-endian systems data is stored in DCBA order.\n
 \n	‣ In big-endian systems data is stored in DCBA order. \n
 \n	‣ Cycle is present in integer and character data type but is not present in float or double types.\n
@@ -235,10 +235,10 @@
 <b>if Condition:</b>\n
 \n‣if is a conditional statement which has two prospectives for the condition is true or false.\n
 \n‣Syntax:\n
-\n       if(condition)
-\n      {
-\n          \t\t//statements
-\n      }
+\n      if(condition)
+\n     {
+\n         \t\t//statements
+\n     }
 \n
 \n‣Ex:\n
 \nif(x == 20)
@@ -326,7 +326,7 @@
 	\n\t\t// statements
 \n}
 \n
-\nEx:\n
+\n‣Ex:\n
 \nint a = 1;		\t\t//initialization
 \nwhile(a &lt; 5) 		\t//condition
 \n{
@@ -345,7 +345,7 @@
 \n} while(condition)
 
 \n
-\nEx:\n
+\n‣Ex:\n
 \nint y=1;\n
 \ndo {\n
 \n\t\ty++;\n
@@ -359,7 +359,7 @@
 	\t\t//statements\n
 }\n
 \n<b>Different styles of for loop:</b>\n
-\nEx:\n
+\n‣Ex:\n
 \n‣int i;\n
 \nfor(i=0; i&lt;20; i++){\n
 \n	\t\t//statements\n
@@ -421,7 +421,73 @@
 
     </string>
     <string name="cpointers">
-‣ When a pointer refers to 0 (zero) address, it is called null pointer.\n
+\n‣Pointer is a derived data type which stores address of a variable.\n
+\n‣Address of a datatype is the address of its first byte.\n
+\n<b>Declaration of Pointer Variable:</b>\n
+
+\n‣Syntax:\n
+\ndatatype *pointer_name;
+\nint *ptr;\n
+\n<b>Initialization of Pointer Variable:</b>\n
+\nint a = 20;
+\nint *ptr;
+\nptr = &amp;a;
+\n
+\n‣&amp; is called “address of” operator.\n
+
+\n<b>Pointer Expressions:</b>\n
+\nint a, b;
+\nint *ptr1 = &amp;a;
+\nint *ptr2 = &amp;b;\n\n
+
+\nptr1 - ptr  // allowed
+\nptr1 + ptr  // not allowed
+\nptr1 * ptr  // not allowed
+\nptr1 / ptr  // not allowed
+\n
+\n<b>Pointer to Pointer (Chaining of Pointer):</b>\n
+\n‣When a pointer holds address of another pointer variable, it is called pointer to pointer or chaining of pointers.\n
+\n‣Ex:
+\n  int a;
+\nint *ptr1 =&amp;a;
+       \n int *ptr2 =&amp;ptr1;\n
+\n<b>Pointer to Function:</b>\n
+\n‣As the pointer has a memory address, we can declare a pointer to a function.\n
+\n‣Syntax:\n
+\nreturn_type (*fun_ptr) ();\n
+
+\n‣Ex:\n
+\nint fun(int, int);
+\nint (*fun_ptr)();
+\nfun_ptr = fun;
+\nVoid Pointer:\n
+
+\n<b>Null Pointers:</b>\n
+\n‣When a pointer refers to the initial (0th address) address in memory, that is called Null pointer.\n
+\n<b>Wild Pointer:</b>\n
+\n‣Uninitialized pointers are called wild pointers.\n
+\n‣Ex:\n
+\nint *ptr;\n
+
+\n<b>Dangling Pointer:</b>\n
+\n‣When a pointer refers to an unallocated memory address, that pointer is called Dangling pointer. \n
+\n<b>Dereference:</b>\n
+\n‣Doing operations (read/write) in memory using the help of pointer is called Dereference.\n
+\n<b>Near and Far Pointer:</b>\n
+\n‣When a pointer refers to an address in same segment, it is called Near pointer. \n
+\n‣When a pointer refers to an address in different segment, it is called Far pointer. \n
+\n<b>Memory Leak:</b>\n
+\n‣When a pointer loses reference of a memory block, it is called memory leak.\n
+
+\n<b>Applications of Pointer:</b>\n
+
+\n‣Array implementation\n
+\n‣Dynamic memory allocation\n
+\n‣Directly accessing the hardware address\n
+\n‣Calling convention of function\n
+\n
+\n<b>Important Points</b>\n
+\n‣ When a pointer refers to 0 (zero) address, it is called null pointer.\n
 \n‣ Generic pointer cannot be Dereference.\n
 \n‣ Arithmetic is not allowed in generic pointer.\n
 \n‣ Return type of malloc and calloc function is generic pointer.\n
@@ -460,6 +526,61 @@
 \n\n\n\n\n
     </string>
     <string name="cdynamic_memory">
+
+‣Dynamic memory allocation is used to overcome the wastage or shortage of memory blocks in program execution.\n
+\n‣Dynamic Memory allocation is flexible so that memory can be added, deleted or rearranged.  \n
+\n‣In dynamic memory allocation, memory allocated at runtime.\n
+
+\n<b>Memory allocation Process:</b>\n
+\n‣Local Variable ------> Stack\n
+\n‣Free Memory-------> Heap\n
+\n‣Global Variables------> Permanent storage area\n
+\n‣C Programming Instructions-----> Permanent storage area\n
+
+\n<b>Memory Allocation Functions:</b>\n
+
+\n<b>malloc:</b>\n
+\n‣malloc allocates request size of bytes and returns a pointer.\n
+\n‣malloc allocates a single block of memory.\n
+\n‣Allocated blocks hold garbage values in default.\n
+\n‣Syntax:\n
+\nptr = (return_type *) malloc(size);\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) malloc(8);
+\nptr = (int *) malloc(sizeof(int));
+\nptr = (int *) malloc(10 * sizeof(int));\n
+
+\n<b>calloc:</b>\n
+\n‣calloc allocates request size of memory and returns a pointer.\n
+\n‣calloc allocates multiple blocks of memories.\n
+\n‣Allocated blocks initialized to zero in default.\n
+\n‣Syntax:\n
+\nptr = (return_type *) calloc(num_of_blocks, size);\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) calloc(2, 8);
+\nptr = (int *) calloc(1, sizeof(int));
+\nptr = (int *) calloc(4, 10 * sizeof(int));\n
+
+\n<b>realloc:</b>\n
+\n‣realloc is used to modify the size of a previously allocated memory.\n
+\n‣Syntax:\n
+\nptr = (return_type *) realloc(ptr_variable, new_size);\n
+\n‣Ex:\n
+\nint *ptr;\n
+\nptr = (int *) realloc(ptr, 8);\n
+\nptr = (int *) realloc(ptr, sizeof(int));\n
+\nptr = (int *) realloc(ptr, 128);\n
+
+\n<b>free:</b>\n
+\n‣free is used to delete an allocated memory block.\n
+\n‣Ex:\n
+\nint *ptr;
+\nptr = (int *) calloc(10, sizeof(int));
+\nfree(ptr);\n
+
+\n<b>Important Points</b>\n\n
 ‣ Dynamic Memory allocation in C is a part of heap area.\n
 \n‣ Memory allocation in C is possible through variables and functions.\n
 \n‣ Basically, dynamic memory allocation is done by a family of 3 function in C, such as malloc(), calloc() and realloc().\n
@@ -482,6 +603,151 @@
 \n\n\n\n\n
     </string>
     <string name="cfunction">
+\n<b>Defination:</b>\n
+\n‣Function is a set of codes to perform a particular task.\n
+
+\n‣Function is of two types:
+\n
+\n<b>Pre Defined Function</b>\n
+
+\n‣These functions are defined by the system and stored in different libraries.\n
+
+\n‣Ex: printf(), scanf()\n
+\n<b>User Defined Function\n</b>\n
+\n‣These functions are defined by the user in the program. \n
+
+\n‣A User Defined Function contains\n
+	\n\t\t<b>Function Declaration</b>\n
+	\n\t\t<b>Function Definition</b>\n
+	\n\t\t<b>Function Call </b>\n\n
+
+
+
+\n<b>Function Declaration or Prototype</b>\n
+\n‣Syntax: \n
+\nreturn_type Function_Name(datatype of arguments); \n
+\n‣Ex: int function_name(int, int); \n
+\n<b>Function Definition:</b>\n
+\n‣Syntax: \n
+\nreturn_type Function_Name(arguments with datatypes); \n
+\n‣Ex: int function_name(int x, int y); \n
+
+\n<b>Function Call: </b>\n
+\n‣Syntax: \n
+\nfunction_name(arguments without datatype); \n
+\n‣Ex: function_name(x, y); \n
+
+\n<b>Note: </b>\n
+\n‣If the function return type is void, function doesn’t return any value. \n
+\n‣If the function return type is int or float or any other datatype, function returns a value accordingly. \n
+\n‣Default return type is int. \n
+\n‣Ex: \n
+\ncreat()\n
+\n{
+\n
+\n\t\t//function_body
+\n\t\treturn 1; \n
+\n}
+\n
+\n<b>Types of Function: </b>\n
+\n‣Functions with no arguments and no return value\n
+
+\n‣Ex:
+\nvoid function_name()
+\n{
+\n}\n
+\n‣Functions with no arguments and one return value\n
+\n‣Ex:
+\nint function_name()
+\n{
+\n\t\treturn 1;
+\n}\n
+\n‣Functions with arguments and no return value\n
+\n‣Ex:
+\nvoid function_name(int x)
+\n{
+\n}
+\n
+\n‣Functions with arguments and one return value\n
+\n‣Ex:
+\nint function_name(int x)
+\n{
+\n\t\treturn 1;
+\n}
+\n
+\n<b>Note:</b>\n
+\n‣You can returns multiple values from a function by using pointer ( * ).
+\n
+\n<b>Actual Parameter and Formal Parameter</b>\n
+\n‣Parameters which are passed in the function call are called actual parameter.\n
+\n‣Ex: sum(2,4);\n
+\n‣Parameters which are received in the function definition are called formal parameter.\n
+\n‣Ex:
+ \nint sum(int x, int y)
+\n{
+\n
+\n}
+\n
+\n<b>Call Value and Call by Reference:</b>\n
+\n‣When the formal parameter holds a copy of actual parameter that is called Call by Value. \n
+\n‣In call by value changes in formal parameter does not affect actual parameters. \n
+\n‣Ex: \n
+\nvoid main()
+\n{
+\n\t\t	int x=10, y=20;
+\n\t\t	swap(x, y);
+
+\n}
+\nvoid sum(int a, int b)
+\n{
+\n\t\t	int temp;
+\n\t\t	temp=x;
+\n\t\t	x=y;
+\n\t\t	y=temp;
+\n\t\t	printf(“%d %d”,x,y);
+\n}
+\n
+\n‣When the formal parameter holds the reference of actual parameter that is called Call by Reference. \n
+\n‣In call by reference, changes in formal parameter affects actual parameters. \n
+
+
+\n‣Ex:
+\nvoid main()
+\n{
+\n\t\t	int x=10, y=20;
+\n\t\t	swap(&amp;x, &amp;y);
+\n\t\t	printf(“%d %d”,x,y);
+\n}
+\nvoid sum(int *a, int *b)
+\n{
+\n\t\t	int temp;
+\n\t\t	temp=*x;
+\n\t\t	*x=*y;
+\n\t\t	*y=temp;
+\n}
+\n
+\n<b>Nested Function:</b> \n
+\n‣When a function definition holds another function definition inside it, called Nested Function. \n
+\n‣Ex:
+\nint function1(int x, int y)
+\n{
+\n\t\tint function2()
+\n\t\t{
+\n\t\t\t\t//Nested Function
+\n\t\t}
+\n}\n
+
+\n<b>Recursion:</b>\n
+\n‣When a function call itself, is known as function recursion.\n
+\n‣Ex:
+\nint sum(int x, int y)
+\n{
+\n\t\tint s = x+y;
+\n\t\tsum();
+\n}
+\n
+
+\n<b>Important Points</b>\n\n
 ‣ Function returns value, function parameters, local automatic variables of a function stores in it stack area.\n
 \n‣ If function return type is bob integer, a prototype is required.\n
 \n‣ Function at a time returns only one value.\n
@@ -506,6 +772,49 @@
 \n\n\n\n\n
     </string>
     <string name="cstorage_class">
+
+‣Storage classes defines the scope and lifetime of a variable or function in c language.\n
+
+\n<b>Automatic Variables(auto):</b>\n
+\n‣auto is the default storage class for all the local variables.\n
+\n‣auto can only be used within a function.\n
+\n‣Ex:\n
+\n{
+\n\t\tint count;
+\n\t\tauto int num;
+\n}\n
+\n‣“int count” is same as “auto int count”.\n
+
+\n<b>Register Variables(register):</b>\n
+\n‣Variables with register storage class are stored in the register instead of RAM.\n
+\n‣Register variables are accessed faster than any other variables. \n
+\n‣Ex:\n
+\n{
+\n\t\tregister int count;
+\n}\n
+\n<b>External Variables(extern):</b>\n
+\n‣External variables are visible globally to all program files.\n
+\n‣Ex:\n
+\nextern int count;
+\nextern int fun();
+\nmain()
+\n{
+\n
+\n}\n
+\n<b>Static Variables (static):</b>\n
+\n‣Static variables are created every time the function executes.\n
+\n‣Once the function control goes out of the function, static variables are destroyed immediately.\n
+\n‣static can be used in both local and global variables. \n
+\n‣Ex:\n
+\nstatic int count = 7;
+\nint fun()
+\n{
+\n\t\tcount++;
+\n\t\tprintf(“%d”,count);
+\n}\n
+\n‣Output will be 8 for every time the function calls.\n
+
+\n<b>Important Points</b>\n\n
 ‣ Storage class decides the scope, life storage and default initial value of variables, and functions.\n
 \n‣ Storage class follows four kinds of scoping rules such as:\n
 
@@ -535,7 +844,86 @@
 \n‣ # is used as string forming where as ## is used as token pasting operator.\n
     </string>
     <string name="cstructure_and_union">
-‣ A structure always allocate memory in a form of block and block size depends on the longest data member of the structure.\n
+<b>Structure</b>\n
+\n‣Structure define type of variables that can hold several data items of dissimilar types.\n
+\n‣Array can store data items of same types but Structure can store data items of dissimilar types.\n
+\n‣Syntax;\n
+\nstruct structure_name
+\n{
+\n	\t\tDatatype member1;
+\n	\t\tDatatype member2;
+\n} \tstr_var1, str_var2, str_var3;\n
+\n‣Ex:\n
+\nstruct book
+\n{
+\n	\t\tchar title[20];
+\n	\t\tchar author[30];
+\n	\t\tint pages;
+\n	\t\tfloat price;
+\n}  ;\n
+\n<b>Note:</b>\n
+\n‣Members of structures are not variables.\n
+
+\n<b>Structure Variables:</b>\n
+\n‣Structure variables can be declared in two ways.\n
+
+\n‣At the end of the structure block, before;\n
+\nstruct book
+\n{
+\n\t\t	char title[20];
+\n\t\t	char author[30];
+\n\t\t	int pages;
+\n\t\t	float price;
+\n} \tbook1, book2, book3;\n
+\n‣book1, book2, book3 are structure variables.\n
+
+\nstruct book
+\n{
+\n\t\t	char title[20];
+\n\t\t	char author[30];
+\n\t\t	int pages;
+\n\t\t	float price;
+\n}  ;
+struct book1, book2, book3;\n\n
+\n‣book1, book2, book3 are structure variables.\n
+\n<b>Note:</b>\n
+\n‣The use of structure tag name is optional to use.\n
+\nstruct
+\n{
+\n\t\t	char title[20];
+\n\t\t	char author[30];
+\n\t\t	int pages;
+\n\t\t	float price;
+\n}  ;\n
+
+\n‣You can access a structure member with the help of a structure variable using dot operator (.).\n
+\n‣Ex: book1.title\n
+
+\n<b>Note:</b> \n
+\n‣Two structure members can’t be compared.\n
+\n‣Ex:\n
+\ntitle1 == title2
+\ntitle1 != title2\n
+\n‣These operations are not permitted.\n
+
+\n‣Size of the structure is equal to sum of size of all the members.\n
+\n<b>Slack byte:</b>\n
+\n‣Slack byte is the unoccupied byte in the structure.\n
+
+\n<b>Union:</b>\n
+\n‣Union is also stored dissimilar data items.\n
+\n‣Size of union is equal to the size of its largest data member.\n
+\n‣Ex:\n
+\nunion item
+\n{
+\n\t\t	int x;
+\n\t\t	char s;
+\n\t\t	float f;
+\n}\t item1, item2;\n
+\n
+
+\n<b>Important Points</b>\n\n
+\n‣ A structure always allocate memory in a form of block and block size depends on the longest data member of the structure.\n
 \n‣ If a structure contains a slack byte, that is called an imbalance structure.\n
 \n‣ Word alignment is required to make imbalance structure to balance structure.\n
 \n‣ A structure can’t be nested within the same structure because it is a restriction in C.\n
@@ -598,7 +986,7 @@
 \n\n\n\n\n
     </string>
     <string name="c_def">
-       \n <b>1. What is the difference between loop and recursion?</b>\n
+       \n<b>1. What is the difference between loop and recursion?</b>\n
 \nLooping is simply executing one piece of code over and over.\n
 \nRecursion also loops through the same code but in recursion a subroutine actually calls itself directly or indirectly.\n
 \n<b>2. Difference between for and while loop?\n</b>
@@ -730,7 +1118,7 @@
     </string>
     <string name="cdifference_between">
 
-       \n <b>1. What is the difference between loop and recursion?</b>\n
+       \n<b>1. What is the difference between loop and recursion?</b>\n
 \nLooping is simply executing one piece of code over and over.\n
 \nRecursion also loops through the same code but in recursion a subroutine actually calls itself directly or indirectly.\n
 \n<b>2. Difference between for and while loop?\n</b>
