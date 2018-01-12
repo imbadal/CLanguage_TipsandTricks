@@ -22,7 +22,6 @@
         \n\n\n\n
     </string>
     <string name="cdatatype">
-<b>
     \n<b>Variables:</b>\n
 \n‣Variable is a name to store Data Values.
 \n‣Rules:
@@ -87,7 +86,7 @@
 \n
 
 
-\nTrigraph Characters:</b>\n
+\n<b>Trigraph Characters:</b>\n
 \n‣Trigraph characters are user in the keyboard those does not supports all the ANSI C characters.\n
 
 \n‣We can use the characters in program by using Trigraphs.\n
@@ -221,331 +220,96 @@
     <string name="coperators">
 
         \t\t\t\t<b>OPERATORS AND EXPRESSIONS</b>\n\n
-C supports a rich set of built-in-operators.\n\n
-An operator is a symbol that tells the computer to perform certain mathematical or logical manipulations.\n\n
-Operators are used in programs to manipulate data and variables.\n\n
-C operators can be classified into a number of categories,Such are:\n\n
-\t\t1. Arithmetic operator\n
-\t\t2. Relational operators\n
-\t\t3. Logical operators\n
-\t\t4. Assignment operators\n
-\t\t5. Increment and Decrement operators\n
-\t\t6. Conditional operators\n
-\t\t7. Bitwise operators\n
-\t\t8. Special operators\n\n
+‣C supports a rich set of built-in-operators.\n\n
+‣An operator is a symbol that tells the computer to perform certain mathematical or logical manipulations.\n\n
+‣Operators are used in programs to manipulate data and variables.\n\n
+‣C operators can be classified into a number of categories,Such are:\n\n
+1. Arithmetic operator\n
+2. Relational operators\n
+3. Logical operators\n
+4. Assignment operators\n
+5. Increment and Decrement operators\n
+6. Conditional operators\n
+7. Bitwise operators\n
+8. Special operators\n\n
 
-        \t\t\t\t<b>1.  Arithmetic operators</b>\n
+<b>1.  Arithmetic operators</b>\n
 \n
-        \t\t<b>Operator\t\t\t\tMeaning</b>\n
-\t\t+\t\t\t\t\t\t\t\t\t\t Addition or unary plus\n
-\t\t-\t\t\t\t\t\t\t\t\t\t\t Subtraction or unary minus\n
-        \t\t*\t\t\t\t\t\t\t\t\t\t Multiplication\n
-        \t\t/\t\t\t\t\t\t\t\t\t\t Division\n
-        \t\t%\t\t\t\t\t\t\t\t\t\t Modulo division\n\n
-The modulo division operator cannot be used in floating point data.\n\n
-        \t\t\t\t2. <b>Relational operators</b>\n\n
-Comparisons can be done with the help of relational operators.\n\n
-        \t\t<b>Operator\t\t\t\tMeaning\n</b>
-   \t\t&lt;\t\t\t\t\t\t\t\t\t\t\t is less than\n
-   \t\t&lt;=\t\t\t\t\t\t\t\t\t\t is less than or equal to\n
-    \t\t> \t\t\t\t\t\t\t\t\t\t is greater than\n
-    \t\t>=\t\t\t\t\t\t\t\t\t\t is greater than or equal to\n
-    \t\t==\t\t\t\t\t\t\t\t\t\t is equal to\n
-    \t\t!=\t\t\t\t\t\t\t\t\t\t    is not equal to\n\n
-Relational operators have a higher priority over relational operators. That means the arithmetic expressions will be evaluated first and then the results compared.\n
-\n\t\t
-        \t\t<b>3.  Logical operators</b>\n\n
-C has the following three logical operators.\n\n
-        <b>\t\tOperator\t\t\t\tmeaning</b>\n
-\t\t&amp;&amp;\t\t\t\t\t\t\t\t\t\t\t\t AND\n
-        \t\t ||\t\t\t\t    \t\t\t\t\t\t\t\t\t\t\tOR\n
-   \t\t !\t\t\t\t\t\t\t\t\t\t\t\t\t\t NOT\n
+<b>Operator\t\tMeaning</b>\n\n
++\t\t\t\t\t\t\t\t Addition or unary plus\n
+-\t\t\t\t\t\t\t\t\t Subtraction or unary minus\n
+*\t\t\t\t\t\t\t\t Multiplication\n
+/\t\t\t\t\t\t\t\t Division\n
+%\t\t\t\t\t\t\t\t Modulo division\n\n
+‣The modulo division operator cannot be used in floating point data.\n\n
+<b>2. Relational operators</b>\n\n
+‣Comparisons can be done with the help of relational operators.\n\n
+<b>Operator\t\tMeaning</b>\n\n
+&lt;\t\t\t\t\t\t\t is less than\n
+&lt;=\t\t\t\t\t\t is less than or equal to\n
+> \t\t\t\t\t\t\t is greater than\n
+>=\t\t\t\t\t\t is greater than or equal to\n
+==\t\t\t\t\t\t is equal to\n
+!=\t\t\t\t\t\t\t is not equal to\n\n
+‣Relational operators have a higher priority over relational operators. That means the arithmetic expressions will be evaluated first and then the results compared.\n
 \n
-The logical operators &amp;&amp; and || used when we want to test more than one condition and make decisions. An example-\n
-         \t\tX &lt; Y &amp;&amp; Z !=3\n\n
-If  two or more relational expressions are combined  then this is called as logical expression or a compound relational expression.\n\n
-        \t\t\t\t<b>4.  Assignment operators</b>\n\n
-Assignment operators are used to assign the result of an expression to a variable.\n
-\t\tExample- x=10;\n\n
-    \t\t<b>Shorthand Assignment operators</b>\n
+<b>3.  Logical operators</b>\n\n
+‣C has the following three logical operators.\n\n
+        <b>\t\tOperator\t\t\t\t Meaning</b>\n\n
+&amp;&amp;\t\t\t\t\t\t\t\t\t\t\t\t AND\n
+||\t\t\t\t    \t\t\t\t\t\t\t\t\tOR\n
+!\t\t\t\t\t\t\t\t\t\t\t\t\t\t NOT\n
+\n
+‣The logical operators &amp;&amp; and || used when we want to test more than one condition and make decisions.\n
+\nEx:\n
+X &lt; Y &amp;&amp; Z !=3\n\n
+‣If  two or more relational expressions are combined  then this is called as logical expression or a compound relational expression.\n\n
+<b>4.  Assignment operators</b>\n\n
+‣Assignment operators are used to assign the result of an expression to a variable.\n\n
+‣Ex: x=10;\n\n
+<b>Shorthand Assignment operators</b>\n
  \n
-\t\tStatement with simple assignment operator \t\t\t\t     statement with shorthand operator\n\n
+<b>simple assignment  \t\t     shorthand</b> \n\n
 
-\t\tX = x + 1\t\t\t\t\t\t\t\t\t\t\t\t                 X += 1\n
-\t\tX = X – 1\t\t\t\t\t\t\t\t  \t\t\t             X -= 1\n
-\t\tX = X * (Y + 1)\t\t\t\t    \t\t               X *= X + 1\n
-\t\tX = X % Y     \t\t\t\t\t\t   \t\t\t\t         X %= Y\n\n
-      \t\t\t\t<b>5.  Increment and Decrement operators </b>\n\n
-the operator ++ adds 1 to the operand, while – subtracts 1. Both are unary operators.\n
-\t\tExample -\n
-        \t\t\t\t\t\t\t\t\t\t\t\t++X;(PREFIX) OR X++;(POSTFIX)\n
-          \t\t\t\t \t\t\t\t\t\t\t\t --X;(PREFIX)  OR X--;(POSTFIX)\n\n
-A prefix operator first adds 1 to the operand and then the result is assigned to the variable on left.\n\n
-A postfix operator first assigns the value to the variable on left and then increments the operand.\n\n
-The increment and decrement operators can be used in complex statements.\n\n
-      \t\t\t\t<b>6.  Conditional operator</b>\n\n
-A ternary operator pair  is available in c to construct conditional expressions of the form\n
-\t\tExample- X ? Y : Z\n\n
+X = x + 1\t\t\t\t\t\t\t\t\t\t                 X += 1\n
+X = X – 1\t\t\t\t\t\t\t\t  \t\t            X -= 1\n
+X = X * (Y + 1)\t\t\t\t    \t\t               X *= X + 1\n
+X = X % Y     \t\t\t\t\t\t   \t\t\t       X %= Y\n\n
 
-         \t\t \t\t\t\t\t\t\t\tX =  (m > n) ? m : n;\n\n\t\t\t\t\t\t\t\t\t\t is similar to the\n\n
-\t\t\t\t \t\t \t\t \t\tif (m > n)\n
-\t\t\t\t \t\t \t\t \t\t\tX = m;\n
-\t\t\t\t \t\t \t\t \t\telse\n
-\t\t\t\t \t\t \t\t \t\t\tX = n;\n\n
-      \t\t\t\t<b>7.  Bitwise operator</b>\n\n
-Bitwise operators are used for testing the bits, or shifting them right or left. Bitwise operators may not be applied to float or double.\n
+<b>5.  Increment and Decrement operators </b>\n\n
+‣The operator ++ adds 1 to the operand, while – subtracts 1. Both are unary operators.\n\n
+‣Ex:\n
+++X;(PREFIX) OR X++;(POSTFIX)\n
+- -X;(PREFIX)  OR X- -;(POSTFIX)\n\n
+‣A prefix operator first adds 1 to the operand and then the result is assigned to the variable on left.\n\n
+‣A postfix operator first assigns the value to the variable on left and then increments the operand.\n\n
+<b>6.  Conditional operator</b>\n\n
+‣A ternary operator pair  is available in c to construct conditional expressions of the form X ? Y : Z  .\n\n
+
+X =  (m > n) ? m : n;\n\n is similar to \n\n
+if (m > n)\n
+\t\tX = m;\n
+else\n
+\t\tX = n;\n\n
+<b>7.  Bitwise operator</b>\n\n
+‣Bitwise operators are used for testing the bits, or shifting them right or left. Bitwise operators may not be applied to float or double.\n
 \n
-      \t\t<b>Operator</b> \t\t\t\t                                                                         <b> Meaning</b>\n
-\t\t&amp;               \t\t\t\t\t\t\t\t\t\t\t\t        bitwise AND\n
-\t\t|\t\t\t\t\t\t\t\t\t\t \t\t \t\t                         bitwise OR\n
-\t\t^\t\t\t\t\t\t\t\t\t\t\t \t\t                        bitwise exclusive OR\n
-\t\t&lt;&lt;\t\t\t\t\t\t\t\t\t\t \t\t                       shift left\n
-        \t\t>> \t\t\t\t\t\t\t\t\t \t\t                      shift right\n\n
-      \t\t\t\t<b>8.  Special operator</b>\n\n
-The special operators are comma operator, sizeof operator, pointer operators (&amp; and *) and member selection operators(. and ->).\n\n
-\t•    Comma operator can be used to link the related expressions together. Comma operator has the lowest precedence of all operators, the parentheses are necessary.\n
-               \t\t   Example- x = (a =10, b = 11, c = a +b);\n\n
-\t•    The sizeof operator is a compile time operator and, when used with an operand, it returns the number of bytes the operand occupies. The operand  may be a variable, a constant or a data type qualifier.\n\n
-\t\tExamples:\t m = sizeof(sum);\n
-        \t\t\t\t \t\t \t\t \t\t \t\t \t\t\tN = sizeof(long int);\n
+<b>Operator</b> \t\t\t\t\t\t <b> Meaning</b>\n
+&amp;\t\t\t\t\t\t\t\t\t\t\t        bitwise AND\n
+|\t\t\t\t\t\t\t\t\t\t \t\t                         bitwise OR\n
+^\t\t\t\t\t\t\t\t\t\t\t                        bitwise exclusive OR\n
+&lt;&lt;\t\t\t\t\t\t\t\t\t\t                      shift left\n
+>> \t\t\t\t\t\t\t\t\t \t                      shift right\n\n
+
+<b>8.  Special operator</b>\n\n
+‣The special operators are comma operator, sizeof operator, pointer operators (&amp; and *) and member selection operators(. and ->).\n\n
+‣Comma operator can be used to link the related expressions together.
+\n‣The sizeof operator is a compile time operator and, when used with an operand, it returns the number of bytes the operand occupies. The operand  may be a variable, a constant or a data type qualifier.\n\n
+‣Ex:\n m = sizeof(sum);\n
+N = sizeof(long int);\n
 \n
-\t    The sizeof operator is normally used to determine the lengths of arrays and structures when their sizes are not known to the programmer.\n\n
-\t    It is also used to allocate memory space dynamically to variables during execution of a program.\n\n
-      \t\t\t\t<b><u>Precedence of operators</u></b>\n\n
-      \t\t<b>Operator</b>    \t\t\t\t<b>Description Associativity</b>\n
-\t\t( )\t\t\t\t \t\t \t\t \t\t \t\tParentheses (function call)\n
-\t\t[ ]\t\t\t\t \t\t \t\t \t\t \t\tBrackets (array subscript)\n
-
-\t\t.\t\t\t\t \t\t \t\t \t\t \t\t \t\tMember selection via object \n   \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\t name\n
-\t\t->\t\t\t\t \t\t \t\t \t\t \t\tMember selection via pointer\n
-\t\t++\t --\t\t\t\t \t\t \t\t  Postfix increment/decrement     \n
-       \t\t \t\t \t\t \t\t \t\t\t\t \t\t\t \tleft-to-right\n \n\n
-
-
-
-\t\t++ \t-- \t\t\t\t \t\t  \t\tPrefix increment/decrement\n
-\t\t+ \t- \t\t\t\t \t\t \t\t \t\tUnary plus/minus\n
-\t\t! ~ \t\t \t\t \t\t \t\t\t \t\tLogical negation/bitwise \n  \t\t\t\t   \t\t\t\t\t\t   \t\t\t\t\t\tcomplement\n
-\t\t(type) \t\t\t\t \t\t  Cast (convert value to\n \t\t\t\t   \t\t\t\t   \t\t\t\t\t\t\t temporary value of type)\n
-\t\t * \t\t\t\t \t\t \t\t\t\t\t  Dereference\n
-\t\t&amp; \t\t\t\t \t\t \t\t \t\t\tAddress (of operand)\n
-\t\tsizeof \t\t\t\t\t \tDetermine size in bytes on \n\t\t\t\t \t\t\t\t\t \t\t\t\t\t\t this implementation   right-to-left\n\n\n
-
-
-
-
-
-
-\t\t*  /  %\t\t\t\t \t\t \t\t  Multiplication/division/modulus    \n\t\t\t\t\t\t\t   \t\t\t\t   \t\t\t\t   left-to-right\n
-\t\t+  -   \t\t\t\t \t\t \t\t \t\t\tAddition/subtraction  left-to-right\n
-\t\t&lt;&lt;  >>\t\t\t\t \t\t \t\t     Bitwise shift left, Bitwise shift\n    \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\t right   left-to-right\n
-\t\t&lt;  &lt;=\t\t\t\t \t\t \t\t \t\tRelational less than/less than or \n \t\t\t\t   \t\t\t\t   \t\t\t\t\t \t\t\tequal to\n
-\t\t>  >=  \t\t\t\t \t\t \t\t \tRelational greater than/
-      \n \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\t\tgreater than or equal\n    \t\t\t\t   \t\t\t\t   \t\t\t\t\t \t\t to    left-to-right\n\n\n
-
-\t\t==  !=\t\t\t\t \t\t \t\t   Relational is equal to/\n  \t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\tis not equal to  left-to-right\n
-\t\t&amp;  \t\t\t\t \t\t \t\t\t \t\t\tBitwise AND left-to-right\n
-\t\t^\t\t\t\t \t\t \t\t \t\t\t\t   Bitwise exclusive OR   left-to-right\n
-\t\t|\t\t\t\t \t\t \t\t \t\t   \t\t\t Bitwise inclusive OR   left-to-right\n
-\t\t&amp;&amp;  \t\t \t\t \t\t\t\t\t\t\tLogical AND   left-to-right\n
-\t\t| |\t\t\t\t \t\t \t\t \t\t\t\t\tLogical OR left-to-right\n
-\t\t? :\t\t\t\t \t\t \t\t \t\t\t   Ternary conditional    right-to-left\n\n\n
-
-
-\t\t=\t\t\t\t \t\t \t\t  \t\t\t\t\tAssignment\n
-\t\t+=  -=\t\t\t\t \t\t \t\t Addition/subtraction \n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\tassignment\n
-\t\t*=  /=\t\t\t\t \t\t \t\t Multiplication/division\n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t assignment\n
-\t\t%=  &amp;= \t\t \t\t \t\t  Modulus/bitwise AND \n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t\tassignment\n
-\t\t^=  ,|=\t\t\t\t \t\t\t\t\tBitwise exclusive/inclusive OR \n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t\tassignment\n
-\t\t&lt;&lt;=,  >>= \t\t \t\t \tBitwise shift left/right \n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t\tassignment    right-to-left\n
-
-
-
-
-
-\t\t,\t\t\t\t \t\t \t\t \t\t\t\t\t Comma (separate expressions)   \n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t\tleft-to-right
-
-\n\n
-\t\t\t\t\t\t\n\t\t\t\t \t\t \t\t \t\t\t\t\t\t \t\t\t<b>Arrays</b>\n\n
-An array is a fixed size sequenced collection of elements of the same data type. \n\nIt is simply a grouping of like-type data. In its simplest form, an array can be used to represent a list of numbers, or list of names.\n\n
-\t\tTypes of arrays:\n\n
-\t\t  One-dimensional arrays\n
-\t\t  Two-dimensional arrays \n
-\t\t  Multidimensional arrays\n
-\n\n
-      \t\t<u>One-dimensional arrays</u>\n\n
-A list of items can be given one variable name using only one subscript and such a variable is called a single-subscripted variable or a one dimensional array.\n\n
-\t\tx[0],x[1],x[2],x[3]……\n\n
-declaration of one dimensional arrays:\n \t\t\tsyntax- type variable-name[size];\n\n
-where type means type of element that will be contained in the array, such as int, float or char and the size indicates the maximum number of elements that can be stored inside the array.\n\n
-\t\tExmple- int bird[10];\n
-    \t\t\t\t   \t\t\t\t\t\t\t      float cost[20];\n\n
-      \t\t<u>Initialization of one dimensional arrays:</u>\n\n
-After an array is declared, its elements must be initialized. Otherwise, they will contain “garbage”.\n\n
-An array can be initialized at either two ways such are:\n\n
-\t\t1. At compile time\n
-\t\t2. At run time\n\n
-      \t\t\t\t<u>At compile time:</u>\n\n
-\t\tType array-name[size] = {list of values};\n
-\t\tExample- int number[3] = {1,2,3};\n\n
-      \t\t\t\t<u>At run time:</u>\n\n
-An array can be explicitly initialized at run time.\n
-\t\tExample- for(i =0; i &lt; 100; i = i ++)\n
-\t\t\t\t{\n
-\t\t\t\t\tif (i &lt; 50)\n
-\t\t\t\t\t\tSum[i] = 0.0;\n
-\t\t\t\t\telse\n
-\t\t\t\t\t\tSum[i] = 1.0;\n
-\t\t   \t\t}           \n\n
-      \t\t\t\t<u>Two dimensional arrays:</u>\n\n
-\t\ttype array-name[row-size][column-size];\n
-\t\tExample- int value[5][4];\n\n
-      \t\t<u>Initializing two dimensional arrays:</u>\n\n
-\t\tint game[2][3] = {1,2,3,4,5,6,};\n\n
-when all the elements are to be initialized to zero, the following short-cut method may be used.\n\n
-\t\tint game[3][5] = {{0},{0},{0}};\n\n
-      \t\t\t\t<u>Multidimensional arrays:</u>\n\n
-c allows arrays of three or more dimensions. The exact limit is determined by the compiler.\n\n
-The general form of  a multi-dimensional arrays is: \n
-Type array-name [size1][size2][size3]…..[sizeN];\n\n
-\t\tExample- int matrix[3][5][12];\n
-\n
-\t\t    The process of allocating memory at compile time is known as static memory allocation  and the arrays that receive static memory  allocation are called static arrays.\n\n
-\t\t   It is possible to allocate memory to arrays at run time. This is known as dynamic memory allocation and the arrays created at run time are called dynamic arrays.\n\n
-\t\t   Dynamic arrays are created using what are known as pointer variables and memory management functions calloc, malloc and realloc. These functions are included in the header file &lt;stdlib.h>.\n
-\n
-      \t\t\t\t<b>CHARACTER ARRAYS AND STRINGS</b>\n\n\n
-A string is a sequence of characters that is treated as a single data item. The header file &lt;string.h> contains all string operations.\n\n
-The general form of declaration of a string variable is:\n
-\t\t\t\t\t\t\t\t\t\t\t\t\t             Char string-name[size];\n\n
-String is initialized in the following way:\n\n
-\t\tchar city[9] =”India”;\n
-\t\tchar city[9] = { ‘I’,’n’,’d’,’I’,’a’};\n\n\n
-      <b>Reading Strings from terminal:</b>\n\n
-      \t\t<u>Using scanf Function:</u>\n\n
-The familiar input function scanf can be used with %s format specification to read in a string of characters.\n\n
-\t\t\t\t      char address[10];\n
-
-      \t\t\t\tscanf(“%s”, address);\n\n
-the problem with the scanf function is that it terminates its input on the first white space it finds.\n\n
-In character arrays the ampersand (&amp;) is not required before the variable name.\n\n
-We can also specify the field width using the form %ws in the scanf statement for reading a specified number of characters from the input string.\n\n
-\t\tExample- scanf(“%ws”,name);\n
-\n
-\t\tUsing getchar and gets function-\n\n
-We can used getchar method to read the successive single characters from the input and place them into a character array. Thus, the entire line of text can be read and stored in an array.\n
-\ngetchar function has no  parameters.\n\n
-\t\tExample- \n\ndo{\n
-   \t\t\t\t   char = getchar();\n
-      \t\t\t\tLine[i] =char; \n
-      \t\t\t\tc++;\n
-\t\t\t\t}while(char != ‘\\n’)\n\n
-Another method of reading a string of text contains whitespaces is to use the library function gets available in the &lt;stdio.h> header file.\n
-\n\t\tExample-\t char statement[10];\n
-   \t\t\t\tgets(statement);\n
-      \t\t\t\tprintf(“%s”, statement);\n\n
-      \t\t<b>Writing strings to screen:</b>\n\n
-
-      \t\t<u>Using printf function-</u>\n\n
-We can use printf function with %s format to print strings to the screen.\n
-\t\tExample- printf(“%s”, name);\n\n
-      \t\t<u>Using putchar and puts function-</u>\n\n
-Like getchar ,we can used putchar function to output the values of character variables.\n
-\t\tExample- char name[10] =”Cornicore”;\n
-   \t\t\t\t   \t\t\t\t   \t\t\t\t for(i =0;i&lt;10;i++)\n
-        \t\t\t\t  \t\t\t\t   \t\t\t\t{\n
-      \t\t\t\t   \t\t\t\t   \t\t\t\tputchar(name[i]);\n
-      \t\t\t\t   \t\t\t\t   \t\t\t\t}\n
-      \t\t\t\t   \t\t\t\t   \t\t\t\tputchar(‘\\n’);\n\n
-like gets, we can used puts function to print the string values .\n
-\t\texample- char line[80];\n
-   \t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\tgets (line);\n
-        \t\t\t    \t\t\t\t   \t\t\t\t   \t\t\t\tputs (line);\n\n
-      \t\t<u>Arithmetic operation on characters-</u>\n\n
-To write a character in its integer representation, we may write it as an integer.\n\n
-\t\tExample-     x = ‘a’;\n
-   \t\t\t\t           \t\t\t\t   \t\t\t\t printf(“%d”,x);\n\n
-it is also possible to perform arithmetic operations on the character constants and variables.\n
-\t\t\t\t      x = ‘z’-1;\n\n
-  we cannot assign one string to another directly.\n\n
-  we cannot join two strings together by the simple arithmetic addition.\n\n
-  String does not permit the comparison of two strings directly.\n\n
-\t\t<b>String handling functions\n\n
-      \t\tFunction\t\t\t\t                                                                        Action</b>\n\n
-\t\t   strcat()\t\t\t\t                  concatenates two strings\n
-   \t\tstrcmp()         \t\t\t    compares two strings\n
-   \t\tstrcpy()\t\t\t\t      \t       copies one string over another\n
-   \t\tstrlen()         \t\t\t\t\t       finds the length of string\n\n
-
-      \t\t<b>Other string functions</b>\n\n
-      \t\t<u>strncpy</u>\n\n
-It copies only the left most n characters of the source string to the target string variables.\n
-\t\tExample- strncpy(s1, s2, 5);\n\n
-      \t\t<u>strncmp</u>\n\n
-It compares the left most n characters of s1 to s2 and returns.\n
-\t\tExample- strncmp(s1, s2, n);\n\n
-      \t\t<u>strncat</u>\n\n
-it will concatenate the left most n characters of s3 to the end of s1.\n
-   \t\tstrncat(s1, s2, n);\n\n
-      \t\t<u>strstr</u>\n\n
-\t\tstrstr(s1, s2);\n\n
-The function strstr searches the string s1 to see whether the string s2 is contained is s1. If yes, the function returns the position of the first occurrence of the sub-string. Otherwise, it returns a NULL pointer.\n\n
-
-
-      \t\t<b><u>File management in c</u></b>\n\n
-If we want to store data in a file in the secondary memory, we must specify certain things about the file to the operating system.\n\n
-      \t\t<b>Function name</b>\t\t\t\t            <b>Operation</b>\n\n
-   \t\tfopen\t\t\t\t\t       \t\t\t\t   \t\t\t       creates a new file for use,
-         \n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\topens an existing file\n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\t for use.\n\n
-   \t\tfclose()\t\t   \t\t\t\t   \t\t\t\t   closes a file which has been
-         \n\t\t\t\t \t\t\t\t\t \t\t\t\t   \t\t\t\t\t\    \t\topened for use.\n\n
-   \t\tgetc()          \t\t\t\t\t    \t\t\t\t\t\t      \treads a character to a file.\n\n
-   \t\tputc()\t\t\t\t\t\t       \t\t\t\t         \t\t      writes a character to a file.\n\n
-   \t\tfprintf()\t\t\t\t\t       \t\t\t       \t\t   reads a set of data values .\n\n
-   \t\tfscanf()\t\t\t\t\t    \t\t            \t\t      writes a set of data values .\n\n
-   \t\tgetw()\t\t\t\t\t   \t\t\t          \t\t\t    reads an integer to a file.\n\n
-   \t\tputw()\t\t\t\t\t      \t\t\t       \t\t\t       writes an integer to  a file.\n\n
-   \t\tfseek()          \t\t\t\t      \t\t\t\t      \t\t   sets the position to a
-         \n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\t\tdesired point in the file.\n\n
-   \t\tftell()\t\t\t\t             \t\t\t\t      \t\t\t\t   gives the current position
-         \n\t\t\t\t \t\t\t\t      \t\t\t\t\t\t\t\t   \t\t\t\t\tin the file.\n\n
-\t\trewind()         \t \t\t\t\t   \t\t\t \t sets the position to the
-         \n\t\t\t\t \t\t\t\t      \t\t\t\t\t\t\t \t\t\t\t\t\tbeginning of the file.\n\n
-\t\tSyntax-\n
-\t\t\t\tFILE *FP;\n
-\t\t\t\tFP = fopen(“filename”, “mode”);\n\n
-  Mode for opening a file is of three types, such are-\n\n\n
-\t\tr     \t\t\t\t\ttopens the file for reading only\n\n
-\t\tw     \t\t\t\topens the file for writing only.\n\n
-\t\ta     \t\t\t\topen the file for appending data to it.\n\n
-\t\tr+ \t\t\t\t   the existing file is opened to
-         \n\t\t\t\t \t\t\t\t   the beginning for both
-      \n \t\t\t\t   \t\t\t\t\treading and writing.\n\n
-\t\tw+ \t\t   same as w except both
-         \n\t\t\t\t\t   \t\t\t\tfor reading and writing.\n\n
-\t\ta+ \t\t\t same as a except both
-         \n\t\t\t\t\t   \t\t\t\tfor reading and writing.\n\n
-  We can open and use a number of files at a time. This number however depends on the system we use.\n\n
-      <u>Closing file</u>\n\n
-A file must be closed as soon as all operations on it have been completed.\n\n This ensures that all outstanding information associated with the file is flushed out from the buffers and all links to the file are broken.\n
-\t\tSyntax- fclose(file_pointer);\n\n
-        \t\t<b>Input/output  operation on files</b>\n\n
-      \t\t<u>getc and putc function-</u>\n\n
-These are analogous to getchar and putchar functions and handle one character at a time.\n
-\t\tExample-  \n
-   \t\t\t\t   \t\t\t\t   putc(c, fp1);\n
-      \t\t\t\t\t \t\t\t\tc=getc(fp2);\n\n
-  The getc wil returns an end of file marker EOF, when end of the file has been reached.\n\n
-      \t\t<u>getw and putw function-</u>\n\n
-These are analogous to getc and putc functions and are used to read and write integer values.\n
-\t\tExample- \n
-   \t\t\t\t   \t\t\t\t   putw(integer, fp);\n
-      \t\t\t\t   \t\t\t\t\tgetw(fp);\n\n
-      \t\t<u>fprintf and  fscanf functions-</u>\n\n
- The functions fprintf and fscanf perform I/O operations that are identical to the familiar printf and scanf functions.\n
-   \t\tfprintf(fp, &#34;control string&#34;, list);\n\n
-where fp is a file pointer associated with a file that has been opened for waiting. The control string contains output specifications for the items in the list. The list may include variables, constants and strings.\n\n
-\t\tExample-   fscanf(f2, &#34;%s %d&#34;, item, &amp;quantity);\n
+‣The sizeof operator is normally used to determine the lengths of arrays and structures when their sizes are not known to the programmer.\n\n
+‣It is also used to allocate memory space dynamically to variables during execution of a program.\n\n
 
 
 \n<b>Important Points:</b>\n\n
@@ -842,7 +606,136 @@ where fp is a file pointer associated with a file that has been opened for waiti
 \n‣ Dereferencing to a null pointer is known as null pointer assignment.\n
 \n\n\n\n\n
     </string>
-    <string name="carrays">‣ An array is a variable which only holds similar types of data elements.\n
+    <string name="carrays">
+
+
+An array is a fixed size sequenced collection of elements of the same data type. \n\nIt is simply a grouping of like-type data. In its simplest form, an array can be used to represent a list of numbers, or list of names.\n\n
+\t\tTypes of arrays:\n\n
+\t\t  One-dimensional arrays\n
+\t\t  Two-dimensional arrays \n
+\t\t  Multidimensional arrays\n
+\n\n
+      \t\t<u>One-dimensional arrays</u>\n\n
+A list of items can be given one variable name using only one subscript and such a variable is called a single-subscripted variable or a one dimensional array.\n\n
+\t\tx[0],x[1],x[2],x[3]……\n\n
+declaration of one dimensional arrays:\n \t\t\tsyntax- type variable-name[size];\n\n
+where type means type of element that will be contained in the array, such as int, float or char and the size indicates the maximum number of elements that can be stored inside the array.\n\n
+\t\tExmple- int bird[10];\n
+    \t\t\t\t   \t\t\t\t\t\t\t      float cost[20];\n\n
+      \t\t<u>Initialization of one dimensional arrays:</u>\n\n
+After an array is declared, its elements must be initialized. Otherwise, they will contain “garbage”.\n\n
+An array can be initialized at either two ways such are:\n\n
+\t\t1. At compile time\n
+\t\t2. At run time\n\n
+      \t\t\t\t<u>At compile time:</u>\n\n
+\t\tType array-name[size] = {list of values};\n
+\t\tExample- int number[3] = {1,2,3};\n\n
+      \t\t\t\t<u>At run time:</u>\n\n
+An array can be explicitly initialized at run time.\n
+\t\tExample- for(i =0; i &lt; 100; i = i ++)\n
+\t\t\t\t{\n
+\t\t\t\t\tif (i &lt; 50)\n
+\t\t\t\t\t\tSum[i] = 0.0;\n
+\t\t\t\t\telse\n
+\t\t\t\t\t\tSum[i] = 1.0;\n
+\t\t   \t\t}           \n\n
+      \t\t\t\t<u>Two dimensional arrays:</u>\n\n
+\t\ttype array-name[row-size][column-size];\n
+\t\tExample- int value[5][4];\n\n
+      \t\t<u>Initializing two dimensional arrays:</u>\n\n
+\t\tint game[2][3] = {1,2,3,4,5,6,};\n\n
+when all the elements are to be initialized to zero, the following short-cut method may be used.\n\n
+\t\tint game[3][5] = {{0},{0},{0}};\n\n
+      \t\t\t\t<u>Multidimensional arrays:</u>\n\n
+c allows arrays of three or more dimensions. The exact limit is determined by the compiler.\n\n
+The general form of  a multi-dimensional arrays is: \n
+Type array-name [size1][size2][size3]…..[sizeN];\n\n
+\t\tExample- int matrix[3][5][12];\n
+\n
+\t\t    The process of allocating memory at compile time is known as static memory allocation  and the arrays that receive static memory  allocation are called static arrays.\n\n
+\t\t   It is possible to allocate memory to arrays at run time. This is known as dynamic memory allocation and the arrays created at run time are called dynamic arrays.\n\n
+\t\t   Dynamic arrays are created using what are known as pointer variables and memory management functions calloc, malloc and realloc. These functions are included in the header file &lt;stdlib.h>.\n
+\n
+      \t\t\t\t<b>CHARACTER ARRAYS AND STRINGS</b>\n\n\n
+A string is a sequence of characters that is treated as a single data item. The header file &lt;string.h> contains all string operations.\n\n
+The general form of declaration of a string variable is:\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t             Char string-name[size];\n\n
+String is initialized in the following way:\n\n
+\t\tchar city[9] =”India”;\n
+\t\tchar city[9] = { ‘I’,’n’,’d’,’I’,’a’};\n\n\n
+      <b>Reading Strings from terminal:</b>\n\n
+      \t\t<u>Using scanf Function:</u>\n\n
+The familiar input function scanf can be used with %s format specification to read in a string of characters.\n\n
+\t\t\t\t      char address[10];\n
+
+      \t\t\t\tscanf(“%s”, address);\n\n
+the problem with the scanf function is that it terminates its input on the first white space it finds.\n\n
+In character arrays the ampersand (&amp;) is not required before the variable name.\n\n
+We can also specify the field width using the form %ws in the scanf statement for reading a specified number of characters from the input string.\n\n
+\t\tExample- scanf(“%ws”,name);\n
+\n
+\t\tUsing getchar and gets function-\n\n
+We can used getchar method to read the successive single characters from the input and place them into a character array. Thus, the entire line of text can be read and stored in an array.\n
+\ngetchar function has no  parameters.\n\n
+\t\tExample- \n\ndo{\n
+   \t\t\t\t   char = getchar();\n
+      \t\t\t\tLine[i] =char; \n
+      \t\t\t\tc++;\n
+\t\t\t\t}while(char != ‘\\n’)\n\n
+Another method of reading a string of text contains whitespaces is to use the library function gets available in the &lt;stdio.h> header file.\n
+\n\t\tExample-\t char statement[10];\n
+   \t\t\t\tgets(statement);\n
+      \t\t\t\tprintf(“%s”, statement);\n\n
+      \t\t<b>Writing strings to screen:</b>\n\n
+
+      \t\t<u>Using printf function-</u>\n\n
+We can use printf function with %s format to print strings to the screen.\n
+\t\tExample- printf(“%s”, name);\n\n
+      \t\t<u>Using putchar and puts function-</u>\n\n
+Like getchar ,we can used putchar function to output the values of character variables.\n
+\t\tExample- char name[10] =”Cornicore”;\n
+   \t\t\t\t   \t\t\t\t   \t\t\t\t for(i =0;i&lt;10;i++)\n
+        \t\t\t\t  \t\t\t\t   \t\t\t\t{\n
+      \t\t\t\t   \t\t\t\t   \t\t\t\tputchar(name[i]);\n
+      \t\t\t\t   \t\t\t\t   \t\t\t\t}\n
+      \t\t\t\t   \t\t\t\t   \t\t\t\tputchar(‘\\n’);\n\n
+like gets, we can used puts function to print the string values .\n
+\t\texample- char line[80];\n
+   \t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\tgets (line);\n
+        \t\t\t    \t\t\t\t   \t\t\t\t   \t\t\t\tputs (line);\n\n
+      \t\t<u>Arithmetic operation on characters-</u>\n\n
+To write a character in its integer representation, we may write it as an integer.\n\n
+\t\tExample-     x = ‘a’;\n
+   \t\t\t\t           \t\t\t\t   \t\t\t\t printf(“%d”,x);\n\n
+it is also possible to perform arithmetic operations on the character constants and variables.\n
+\t\t\t\t      x = ‘z’-1;\n\n
+  we cannot assign one string to another directly.\n\n
+  we cannot join two strings together by the simple arithmetic addition.\n\n
+  String does not permit the comparison of two strings directly.\n\n
+\t\t<b>String handling functions\n\n
+      \t\tFunction\t\t\t\t                                                                        Action</b>\n\n
+\t\t   strcat()\t\t\t\t                  concatenates two strings\n
+   \t\tstrcmp()         \t\t\t    compares two strings\n
+   \t\tstrcpy()\t\t\t\t      \t       copies one string over another\n
+   \t\tstrlen()         \t\t\t\t\t       finds the length of string\n\n
+
+      \t\t<b>Other string functions</b>\n\n
+      \t\t<u>strncpy</u>\n\n
+It copies only the left most n characters of the source string to the target string variables.\n
+\t\tExample- strncpy(s1, s2, 5);\n\n
+      \t\t<u>strncmp</u>\n\n
+It compares the left most n characters of s1 to s2 and returns.\n
+\t\tExample- strncmp(s1, s2, n);\n\n
+      \t\t<u>strncat</u>\n\n
+it will concatenate the left most n characters of s3 to the end of s1.\n
+   \t\tstrncat(s1, s2, n);\n\n
+      \t\t<u>strstr</u>\n\n
+\t\tstrstr(s1, s2);\n\n
+The function strstr searches the string s1 to see whether the string s2 is contained is s1. If yes, the function returns the position of the first occurrence of the sub-string. Otherwise, it returns a NULL pointer.\n\n
+
+       \n\n<b>Important Points</b>\n\n
+
+        ‣ An array is a variable which only holds similar types of data elements.\n
 \n‣ Array is used to prepare a list.\n
 \n‣ A list can be prepared using an array and linked list. If the list size is known in advance then you can take an array, but if it is unknown you can take a linked list.\n
 \n‣ Limitation of an array is:\n
@@ -1283,6 +1176,64 @@ struct book1, book2, book3;\n\n
 \n\n\n\n\n
     </string>
     <string name="cfiles">
+              \t\t<b><u>File management in c</u></b>\n\n
+If we want to store data in a file in the secondary memory, we must specify certain things about the file to the operating system.\n\n
+      \t\t<b>Function name</b>\t\t\t\t            <b>Operation</b>\n\n
+   \t\tfopen\t\t\t\t\t       \t\t\t\t   \t\t\t       creates a new file for use,
+         \n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\topens an existing file\n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\t for use.\n\n
+   \t\tfclose()\t\t   \t\t\t\t   \t\t\t\t   closes a file which has been
+         \n\t\t\t\t \t\t\t\t\t \t\t\t\t   \t\t\t\t\t\    \t\topened for use.\n\n
+   \t\tgetc()          \t\t\t\t\t    \t\t\t\t\t\t      \treads a character to a file.\n\n
+   \t\tputc()\t\t\t\t\t\t       \t\t\t\t         \t\t      writes a character to a file.\n\n
+   \t\tfprintf()\t\t\t\t\t       \t\t\t       \t\t   reads a set of data values .\n\n
+   \t\tfscanf()\t\t\t\t\t    \t\t            \t\t      writes a set of data values .\n\n
+   \t\tgetw()\t\t\t\t\t   \t\t\t          \t\t\t    reads an integer to a file.\n\n
+   \t\tputw()\t\t\t\t\t      \t\t\t       \t\t\t       writes an integer to  a file.\n\n
+   \t\tfseek()          \t\t\t\t      \t\t\t\t      \t\t   sets the position to a
+         \n \t\t\t\t\t\t\t \t\t\t\t   \t\t\t\t   \t\t\t\t\t\tdesired point in the file.\n\n
+   \t\tftell()\t\t\t\t             \t\t\t\t      \t\t\t\t   gives the current position
+         \n\t\t\t\t \t\t\t\t      \t\t\t\t\t\t\t\t   \t\t\t\t\tin the file.\n\n
+\t\trewind()         \t \t\t\t\t   \t\t\t \t sets the position to the
+         \n\t\t\t\t \t\t\t\t      \t\t\t\t\t\t\t \t\t\t\t\t\tbeginning of the file.\n\n
+\t\tSyntax-\n
+\t\t\t\tFILE *FP;\n
+\t\t\t\tFP = fopen(“filename”, “mode”);\n\n
+  Mode for opening a file is of three types, such are-\n\n\n
+\t\tr     \t\t\t\t\ttopens the file for reading only\n\n
+\t\tw     \t\t\t\topens the file for writing only.\n\n
+\t\ta     \t\t\t\topen the file for appending data to it.\n\n
+\t\tr+ \t\t\t\t   the existing file is opened to
+         \n\t\t\t\t \t\t\t\t   the beginning for both
+      \n \t\t\t\t   \t\t\t\t\treading and writing.\n\n
+\t\tw+ \t\t   same as w except both
+         \n\t\t\t\t\t   \t\t\t\tfor reading and writing.\n\n
+\t\ta+ \t\t\t same as a except both
+         \n\t\t\t\t\t   \t\t\t\tfor reading and writing.\n\n
+  We can open and use a number of files at a time. This number however depends on the system we use.\n\n
+      <u>Closing file</u>\n\n
+A file must be closed as soon as all operations on it have been completed.\n\n This ensures that all outstanding information associated with the file is flushed out from the buffers and all links to the file are broken.\n
+\t\tSyntax- fclose(file_pointer);\n\n
+        \t\t<b>Input/output  operation on files</b>\n\n
+      \t\t<u>getc and putc function-</u>\n\n
+These are analogous to getchar and putchar functions and handle one character at a time.\n
+\t\tExample-  \n
+   \t\t\t\t   \t\t\t\t   putc(c, fp1);\n
+      \t\t\t\t\t \t\t\t\tc=getc(fp2);\n\n
+  The getc wil returns an end of file marker EOF, when end of the file has been reached.\n\n
+      \t\t<u>getw and putw function-</u>\n\n
+These are analogous to getc and putc functions and are used to read and write integer values.\n
+\t\tExample- \n
+   \t\t\t\t   \t\t\t\t   putw(integer, fp);\n
+      \t\t\t\t   \t\t\t\t\tgetw(fp);\n\n
+      \t\t<u>fprintf and  fscanf functions-</u>\n\n
+ The functions fprintf and fscanf perform I/O operations that are identical to the familiar printf and scanf functions.\n
+   \t\tfprintf(fp, &#34;control string&#34;, list);\n\n
+where fp is a file pointer associated with a file that has been opened for waiting. The control string contains output specifications for the items in the list. The list may include variables, constants and strings.\n\n
+\t\tExample-   fscanf(f2, &#34;%s %d&#34;, item, &amp;quantity);\n
+
+
+
+\n\n<b>Important Points</b>\n\n
 ‣ The flow of data from buffer to device or device to buffer is called stream.\n
 \n‣ When data moves from device to buffer it is called an input stream and when it moves from buffer to device, it is called output stream.\n
 \n‣ When OS allocates memory from a kernel space for special use, that memory is called buffer. In Linux buffer size is 4K.\n
@@ -1900,7 +1851,7 @@ int *ptr;\n
 \n<b>Q2.</b>\n
 \nvoid main()
 \n{
-\n\t\tunsigned cahr i = 0;
+\n\t\tunsigned char i = 0;
 \n\t\tfor(i=0;i&lt;256;i++){
 \n		\t\t\t\tprintf(“%d”,i);
 \n	\t\t\t\tx++;
@@ -1914,7 +1865,7 @@ int *ptr;\n
 \n<b>Q3.</b>\n
 \nvoid main()
 \n{
-\n\t\tsigned cahr i = 0;
+\n\t\tsigned char i = 0;
 \n\t\tfor(i=0;i&lt;128;i++){
 \n		\t\t\t\tprintf(“%d”,i);
 \n	\t\t\t\tx++;
@@ -1928,8 +1879,8 @@ int *ptr;\n
 \n<b>Q4.</b>\n
 \nvoid main()
 \n{
-\n\t\tsigned cahr i = -130;
-\n\t\tsigned cahr j= -5;
+\n\t\tsigned char i = -130;
+\n\t\tsigned char j= -5;
 \n\t\tprintf(“%d”,i+j);
 \n}\n
 \n<b>Output:</b>\n

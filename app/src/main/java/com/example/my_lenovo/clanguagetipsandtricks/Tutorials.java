@@ -20,12 +20,13 @@ public class Tutorials extends AppCompatActivity {
     private static TextView c_structureandunion;
     private static TextView c_files;
     private static TextView c_miscellaneous;
-
+    private static TextView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorials);
+
         OnClickOverview();
         OnClickDatatypes();
         OnClickOperators();
@@ -39,6 +40,8 @@ public class Tutorials extends AppCompatActivity {
         OnClickStructureAndUnion();
         OnClickFiles();
         OnClickMiscellaneous();
+
+
     }
 
     public void OnClickOverview() {
